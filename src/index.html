@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ben Lischin</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+         <header>
+            <nav>
+               <a href="#home" class="home active">Home</a>
+               <a href="#experience" class="section">Experience</a>
+               <a href="#projects" class="section">Projects</a>
+            </nav>
+         </header>
+         <section id="home">
+            <div class="home">
+               <h1>Ben Lischin</h1>
+               <hr>
+               <p class="description">Software Engineer | Student</p>
+               <div class="links">
+                  <a href="https://www.linkedin.com/in/ben-lischin/" target="_blank">
+                     <img src="/res/linkedin.png" alt="Linkedin">
+                   </a>
+                   <a href="https://github.com/ben-lischin" target="_blank">
+                     <img src="/res/github.png" alt="GitHub">
+                   </a>
+               </div>
+            </div>
+         </section>
+         <section id="experience">
+            <h2>Experience</h2>
+            <hr>
+            <div class="timeline">
+                <div class="timeline-block timeline-block-right">
+                   <div class="marker" onclick="openLink('https://www.klaviyo.com/')"></div>
+                   <div class="timeline-content">
+                      <h3 onclick="openLink('https://www.klaviyo.com/')">Klaviyo</h3>
+                      <span>Software Engineer Co-Op</span>
+                      <p>(incoming)</p>
+                   </div>
+                </div>
+                <div class="timeline-date timeline-date-right">
+                   <p>Jul - Dec 2024</p>
+                </div>
+
+                <div class="timeline-block timeline-block-left">
+                   <div class="marker" onclick="openLink('https://www.validity.com/')"></div>
+                   <div class="timeline-content">
+                      <h3 onclick="openLink('https://www.validity.com/')">Validity</h3>
+                      <span>Software Engineer Intern</span>
+                      <p>After my first Co-Op at Validity, I was extended an offer to continue my work on the SenderScore project part-time during the Spring semester.&lrm;</p>
+                      <p>Fleshed out a final SenderScore algorithm to assess the performance of 2M+ IPs with 72 features in a daily rollup of S3 email data. I implemented optimized clustering, normalization, and similarity computations in Python for comprehensive analysis, fit with activation functions to reduce data complexity. At the end of the evaluation, a summary report is provided to inform senders on where they may have been penalized.&lrm;</p>
+                      <p>In the remaining time of my internship, I developed and tested an Angular frontend for a new PQL (Product Qualified Leads) module in our internal tool software. This included integrating new backend API endpoints to maximize search and filter efficiency for company leads.&lrm;</p>
+                   </div>
+                </div>
+                <div class="timeline-date timeline-date-left">
+                   <p>Dec 2023 - Apr 2024</p>
+                </div>
+
+                <div class="timeline-block timeline-block-right">
+                   <div class="marker" onclick="openLink('https://www.validity.com/')"></div>
+                   <div class="timeline-content">
+                      <h3 onclick="openLink('https://www.validity.com/')">Validity</h3>
+                      <span>Software Engineer Co-Op</span>
+                      <p>Regularly completed spikes and thoroughly researched proof of concept for project planning. For example, I helped scope the implementation of a PII−redaction service that would be used to protect sensitive user information in 150M+ emails processed daily.</p>
+                      <p>Identified code issues and inefficiencies, producing solutions in an agile development environment.</p>
+                      <p>Enhanced e2e automation testing efficiency for the DemandTools app by upgrading the Cypress test suite; optimized existing test scripts for improved reliability and maintainability, and added new coverage following TDD.</p>
+                      <p>Queried 300B+ entries of email data across live S3 buckets to identify new leadsners, driving critical marketing decisions.</p>
+                      <p>Towards the end of my Co-Op, I began working on SenderScore, a project I would continue into my next experience.</p>
+                   </div>
+                </div>
+                <div class="timeline-date timeline-date-right">
+                   <p>Aug - Dec 2023</p>
+                </div>
+    
+             </div>
+         </section>
+         <section id="projects">
+            <h2>Projects</h2>
+            <hr>
+            <div>
+               <div class="projectList"></div>
+               <!-- show the selected/hovered project -->
+            </div>
+         </section>
+        
+         <script src="/vantajs/three.r134.min.js"></script>
+         <script src="/vantajs/vanta.net.min.js"></script>
+         <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script> -->
+         <!-- <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script> -->
+         <script src="script.js"></script>
+    </body>
+</html>
