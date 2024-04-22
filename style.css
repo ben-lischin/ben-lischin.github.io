@@ -210,7 +210,6 @@ h2 span {
 .timeline-content {
    width: 95%;
    padding: 0 15px;
-   color: rgb(107,181,170)
 }
 
 .timeline-content h3 {
@@ -219,11 +218,12 @@ h2 span {
    font-size: 25px;
    font-weight: 500;
    cursor: pointer;
+   color: #d1d1d1;
 }
 
 .timeline-content span {
    font-size: 15px;
-   color: #d1d1d1;
+   color: rgb(107,181,170)
 }
 
 .timeline-content p {
@@ -253,5 +253,60 @@ h2 span {
    }
 }
 
+.projects {
+   display: flex;
+   gap: 35px;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   padding-top: 50px;
+}
 
- 
+.projectList, .projectView {
+   flex-grow: 0;
+   flex-shrink: 0;
+   background-color: transparent;
+   color: #d1d1d1;
+   border-radius: 15px;
+   padding: 25px;
+}
+
+.projectList {
+   width: 20%;
+   border: 1px solid #d1d1d1;
+   min-height: 65vh;
+}
+
+.projectView {
+   width: 55%;
+}
+
+.projectName {
+   padding: 15px;
+   transition: text-decoration 0.3s;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+}
+
+.projectName:hover, .projectName.active {
+   text-decoration: underline rgb(107, 181, 170);
+   text-decoration-thickness: 2px;
+   text-underline-offset: 5px;
+}
+
+.projectView:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.projectView.active {
+   display: block;
+}
+
+.projectInfo {
+    display: none;
+    padding: 10px;
+    color: #d1d1d1;
+    position: relative;
+    transition: z-index 0.3s;
+}
