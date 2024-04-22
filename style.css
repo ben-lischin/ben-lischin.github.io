@@ -63,7 +63,7 @@ body {
 }
 
 section {
-   padding-top: 80px; /* Adjust the padding based on your navigation bar's height */
+   padding-top: 80px;
    margin-bottom: 50px;
 }
 
@@ -84,6 +84,7 @@ h2 {
    color: transparent;
    font-size: 65px;
    -webkit-text-stroke: 1px #fff;
+   font-family: 'Trebuchet MS';
 }
 
 .description {
@@ -96,11 +97,11 @@ h2 {
 
 .links {
    display: flex;
-   justify-content: center; /* Centers the flex items horizontally */
+   justify-content: center;
    margin: 0px;
 
    a {
-      margin: 0 15px; /* Adjust the margin as needed for spacing between links */
+      margin: 0 15px;
 
       img {
          width: 40px;
