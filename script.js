@@ -37,43 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function openLink(url) {
     window.open(url, '_blank');
 }
+
 // project info
-// const projectNames = document.querySelectorAll('.projectName');
-// const projectInfos = document.querySelectorAll('.projectInfo');
-// const projectView = document.querySelector('.projectView');
-
-// let clickedProject = null;
-
-// projectNames.forEach((name, index) => {
-//     name.addEventListener('click', () => {
-//         projectNames.forEach(n => n.classList.remove('active'));
-//         name.classList.add('active');
-//         projectInfos.forEach(info => info.style.display = 'none');
-//         projectInfos[index].style.display = 'block';
-//         clickedProject = projectInfos[index];
-//     });
-
-//     name.addEventListener('mouseover', () => {
-//         if (clickedProject != projectInfos[index]) {
-//             // set this info to the top
-//             if (clickedProject) {
-//                 clickedProject.display = 'none';
-//             }
-//             projectInfos[index].style.display = 'block';
-//             // projectInfos[index].style.zIndex = '99';
-//         }
-//     });
-
-//     name.addEventListener('mouseout', () => {
-//         if (clickedProject != projectInfos[index]) {
-//             projectInfos[index].style.display = 'none';
-//             if (clickedProject) {
-//                 clickedProject.style.display = 'block';
-
-//             }
-//         }
-//     });
-// });
 const projectNames = document.querySelectorAll('.projectName');
 const projectView = document.querySelector('.projectView');
 const projectInfos = [
@@ -147,7 +112,6 @@ const projectInfos = [
             </div>
         `
     },
-    // Add similar structures for other projects
 ];
 let activeProjectId = null;
 let clickedProjectId = null;
