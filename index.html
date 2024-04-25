@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ben Lischin</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/res/soccer.png">
     </head>
     <body>
          <header>
@@ -51,7 +52,7 @@
                       <h3 onclick="openLink('https://www.validity.com/')">Validity</h3>
                       <span>Software Engineer Intern</span>
                       <p>After my first Co-Op at Validity, I was extended an offer to continue my work on the SenderScore project part-time during the Spring semester.&lrm;</p>
-                      <p>Fleshed out a final SenderScore algorithm to assess the performance of 2M+ IPs with 72 features in a daily rollup of S3 email data. I implemented optimized clustering, normalization, and similarity computations in Python for comprehensive analysis, fit with activation functions to reduce data complexity. At the end of the evaluation, a summary report is provided to inform senders on where they may have been penalized.&lrm;</p>
+                      <p>Fleshed out a final SenderScore algorithm to assess the performance of 2M+ IPs with 72 features in a daily rollup of S3 email data. I implemented optimized clustering, normalization, and similarity computations in Python for comprehensive analysis, fit with activation functions to reduce data complexity. At the end of the evaluation, senders receive a summary report to inform them on where they may have been penalized.&lrm;</p>
                       <p>In the remaining time of my internship, I developed and tested an Angular frontend for a new PQL (Product Qualified Leads) module in our internal tool software. This included integrating new backend API endpoints to maximize search and filter efficiency for company leads.&lrm;</p>
                    </div>
                 </div>
@@ -67,7 +68,7 @@
                       <p>Regularly completed spikes and thoroughly researched proof of concept for project planning. For example, I helped scope the implementation of a PII−redaction service that would be used to protect sensitive user information in 150M+ emails processed daily.</p>
                       <p>Identified code issues and inefficiencies, producing solutions in an agile development environment.</p>
                       <p>Enhanced e2e automation testing efficiency for the DemandTools app by upgrading the Cypress test suite; optimized existing test scripts for improved reliability and maintainability, and added new coverage following TDD.</p>
-                      <p>Queried 300B+ entries of email data across live S3 buckets to identify new leadsners, driving critical marketing decisions.</p>
+                      <p>Queried 300B+ entries of email data across live S3 buckets to identify new leads, driving critical marketing decisions.</p>
                       <p>Towards the end of my Co-Op, I began working on SenderScore, a project I would continue into my next experience.</p>
                    </div>
                 </div>
@@ -80,12 +81,30 @@
          <section id="projects">
             <h2>Projects</h2>
             <hr>
-            <div>
-               <div class="projectList"></div>
-               <!-- show the selected/hovered project -->
-            </div>
+            <div class="projects">
+               <div class="projectList">
+                   <div class="projectName">Covey.Town: Shogi</div>
+                   <div class="projectName">Vestio</div>
+                   <div class="projectName">UltraHealth</div>
+                   <div class="projectName">Image Editor</div>
+                   <div class="projectName">Maze Solver</div>
+               </div>
+               <div class="projectView"></div>
+           </div>
          </section>
-        
+         <!-- <section id="education">
+            <h2>Education</h2>
+            <hr>
+            <div class="educationContainer">
+               <div class="education">Northeastern University</div>
+               <div class="education">Regis High School</div>
+               <div class="education">Summer STEM Institute</div>
+               <div class="education">NextGen Bootcamp</div>
+            </div>
+         </section> -->
+         <footer>
+            <p>Last updated 4/24/24</p>
+         </footer>
          <script src="/vantajs/three.r134.min.js"></script>
          <script src="/vantajs/vanta.net.min.js"></script>
          <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script> -->
