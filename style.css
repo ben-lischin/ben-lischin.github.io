@@ -131,10 +131,9 @@ h2 {
       }
 
       img:hover {
-         filter: brightness(0.9);
+         filter: brightness(1.1);
       }
 
-      
    }
 }
 
