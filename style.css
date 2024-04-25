@@ -362,15 +362,33 @@ h2 span {
       -webkit-text-stroke: initial;
       color: #d1d1d1;
       font-family: 'Quicksand';
-      font-size: 30px
+      font-size: 30px;
+      margin-bottom: 5px;
    }
 
    .projectDescription {
       font-size: 15px;
+      padding: 10px 0;
+   }
+
+   .projectLinks {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 5px;
+
+      a {
+         font-size: 12px;
+         color: #d1d1d1;
+      }
+
+      a:hover {
+         color: rgb(107, 181, 170);
+      }
+
    }
 
    .projectSkills {
-      padding-top: 10px;
       display: flex;
 
       .projectSkill {
