@@ -153,7 +153,7 @@ const projectInfos = [
                 </div>
                 <div class="projectDescription">
                     <p>The project interface loads with random maze of specified or default dimension. This maze is built by applying Kruskal's algorighm to generate a minimum spanning tree of a (seeded) randomly weighted graph of all the cells.</p>
-                    <p>Users may intercat to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon completing a search, highlights the most efficient path. At any point, users may refresh with a new maze to try solving.</p>
+                    <p>Users may intercat to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may refresh with a new maze.</p>
                 </div>
                 <div class="projectSkills">
                     <div class="projectSkill">Java</div>
