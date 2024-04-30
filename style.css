@@ -90,7 +90,7 @@ body {
    margin-bottom: 0;
 }
 
-hr {
+.home hr {
    animation: hr-load .75s ease;
    animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
 }
