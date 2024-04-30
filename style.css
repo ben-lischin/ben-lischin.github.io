@@ -134,6 +134,7 @@ h2 {
       img {
          width: 40px;
          height: 40px;
+         cursor: pointer;
       }
 
       img:hover {
@@ -242,6 +243,7 @@ h2 span {
    background: #F5F7FA;
    margin-top: 5%;
    z-index: 2;
+   cursor: pointer;
 }
 
 .marker:hover {
@@ -255,14 +257,16 @@ h2 span {
 }
 
 .timeline-content h3 {
+   display: inline-block;
    margin-top: 5px;
    margin-bottom: 5px;
    font-size: 25px;
    font-weight: 500;
    color: #d1d1d1;
+   cursor: pointer;
 }
 
-.timeline-content span {
+.timeline-content .position {
    font-size: 15px;
    color: rgb(107,181,170)
 }
@@ -389,6 +393,7 @@ h2 span {
       a {
          font-size: 12px;
          color: #d1d1d1;
+         cursor: pointer;
       }
 
       a:hover {
