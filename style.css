@@ -90,15 +90,6 @@ body {
    margin-bottom: 0;
 }
 
-.home hr {
-   animation: hr-load .85s ease;
-   animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
-}
-@keyframes hr-load {
-   0% { transform: scale(0); }
-   100% { transform: scale(1); }
-}
-
 section {
    padding: 80px 0 50px;
 }
@@ -158,6 +149,12 @@ hr {
    border-color: rgb(107,181,170);
    margin-top: 0;
    margin-bottom: 0;
+   animation: hr-load .85s ease;
+   animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+@keyframes hr-load {
+   0% { transform: scale(0); }
+   100% { transform: scale(1); }
 }
 
 h2 span {
