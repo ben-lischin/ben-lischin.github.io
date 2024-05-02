@@ -156,12 +156,33 @@ const projectInfos = [
                 </div>
                 <div class="projectDescription">
                     <p>The project interface loads with random maze of specified or default dimension. This maze is built by applying Kruskal's algorighm to generate a minimum spanning tree of a (seeded) randomly weighted graph of all the cells.</p>
-                    <p>Users may intercat to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may refresh with a new maze.</p>
+                    <p>Users may interact to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may refresh with a new maze.</p>
                 </div>
                 <div class="projectSkills">
                     <div class="projectSkill">Java</div>
                     <div class="projectSkill">Graphs</div>
                     <div class="projectSkill">JUnit</div>
+                </div>
+            </div>
+        `
+    },
+    { 
+        id: 'project6',
+        content: `
+            <div class="projectContent">
+                <h2>Hemorrhage Classification</h2>
+                <div class="projectLinks">
+                    <a href="https://drive.google.com/file/d/1_v3dr_aSB6B6pjKeDZIm0ZEX5avVvLyf/view?usp=sharing" target="_blank">Report</a>
+                </div>
+                <div class="projectDescription">
+                    <p><a href="https://zetasurgical.com/">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
+                    <p>The labeled data is grouped into: intraparenchymal, intraventricular, subarachnoid, subdural, multi-class, and a control group of healthy brains.</p>
+                    <p>After preprocessing, the scans were fed to each of our 5 models for classification: Logistic Regression, Random Forest, Artificial Neural Network, Convolutional Neural Network, LeNet-5 Pretrained Convolutional Neural Network.</p>
+                </div>
+                <div class="projectSkills">
+                    <div class="projectSkill">Neural Network</div>
+                    <div class="projectSkill">Random Forest</div>
+                    <div class="projectSkill">Logistic Regression</div>
                 </div>
             </div>
         `
@@ -189,9 +210,7 @@ projectNames.forEach((name, index) => {
         updateProjectInfo(id);
     });
 
-    name.addEventListener('mouseover', (event) => {
-        event.stopPropagation(); // Stop event propagation
-        event.preventDefault(); // Prevent the default event
+    name.addEventListener('mouseover', () => {
         if (id !== activeProjectId) {
             updateProjectInfo(id);
         }
