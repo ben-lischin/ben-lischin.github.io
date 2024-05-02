@@ -27,9 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x6bb5aa, // Hexadecimal color code without #
-        backgroundColor: 0x3b3b3b, // Hexadecimal color code without #
-        showDots: false
+        color: 0x6bb5aa, // blue, 0x{hex code}
+        // color: 0xedbb36, // orange, 0x{hex code}
+        backgroundColor: 0x3b3b3b, // gray, 0x{hex code}
+        showDots: false,
+        points: 9,
+        maxDistance: 18,
     })
 });
 

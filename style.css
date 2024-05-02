@@ -8,6 +8,8 @@
     outline: none;
     scroll-behavior: smooth;
     cursor: url('/cursor/ow_cursor.cur'), auto;
+    --main-color: rgb(107,181,170);
+    /* --main-color: rgb(237,187,54); */
  }
 
 header {
@@ -63,13 +65,13 @@ nav a.section:hover::before,
 nav a.section.active::before {
    transform: scaleX(1);
    width: 100%;
-   background-color: rgb(107, 181, 170);
+   background-color: var(--main-color);
 }
 
 nav a.home {
    border-radius: 50px;
    border: 2px solid transparent;
-   background: rgb(107,181,170);
+   background: var(--main-color);
    padding: 5px 10px;
    color: rgb(59,59,59);
 }
@@ -147,7 +149,7 @@ h2 {
 hr {
    width: 35%;
    min-width: 300px;
-   border-color: rgb(107,181,170);
+   border-color: var(--main-color);
    margin-top: 0;
    margin-bottom: 0;
    animation: hr-load .85s ease;
@@ -239,7 +241,7 @@ h2 span {
    width: 16px;
    height: 16px;
    border-radius: 50%;
-   border: 2px solid rgb(107,181,170);
+   border: 2px solid var(--main-color);
    background: #F5F7FA;
    margin-top: 5%;
    z-index: 2;
@@ -248,7 +250,7 @@ h2 span {
 
 .marker:hover {
    border: 2px solid #F5F7FA;
-   background: rgb(107,181,170);
+   background: var(--main-color);
 }
 
 .timeline-content {
@@ -268,7 +270,7 @@ h2 span {
 
 .timeline-content .position {
    font-size: 15px;
-   color: rgb(107,181,170)
+   color: var(--main-color);
 }
 
 .timeline-content p {
@@ -359,7 +361,7 @@ h2 span {
 .projectName.active::before {
    transform: scaleX(1);
    width: 100%;
-   background-color: rgb(107, 181, 170);
+   background-color: var(--main-color);
 }
 
 .projectView {
@@ -397,7 +399,7 @@ h2 span {
       }
 
       a:hover {
-         color: rgb(107, 181, 170);
+         color: var(--main-color);
       }
 
    }
@@ -409,7 +411,7 @@ h2 span {
          margin: 5px;
          padding: 6px;
          border-radius: 5px;
-         border: 1px solid rgb(107, 181, 170);
+         border: 1px solid var(--main-color);
          color: #d1d1d1;
          font-size: 13px;
       }
