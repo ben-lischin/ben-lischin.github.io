@@ -251,13 +251,10 @@ function updateProjectInfo(id) {
 }
 
 function resetContent() {
-    // Clear the inner HTML of the projectView to remove displayed content
     projectView.innerHTML = '';
 
-    // Optionally, reset the active project ID
     activeProjectId = null;
     clickedProjectId = null;
 
-    // Remove the 'active' class from all project names
     projectNames.forEach(n => n.classList.remove('active'));
 }
