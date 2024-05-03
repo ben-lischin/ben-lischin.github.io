@@ -175,7 +175,7 @@ const projectInfos = [
                     <a href="https://drive.google.com/file/d/1_v3dr_aSB6B6pjKeDZIm0ZEX5avVvLyf/view?usp=sharing" target="_blank">Report</a>
                 </div>
                 <div class="projectDescription">
-                    <p><a href="https://zetasurgical.com/">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
+                    <p><a href="https://zetasurgical.com/" target="_blank">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
                     <p>After preprocessing, these scans are fed into each of our 5 models for classification: (1) Logistic Regression (2) Random Forest (3) ANN (4) CNN (5) LeNet-5 Pretrained CNN.</p>
                     <p>In these supervised ML models, the images are fit into collections for the 5 hemmorage types (intraparenchymal, intraventricular, subarachnoid, subdural), a multi-class, and a control group of healthy brains.</p>                    
                 </div>
@@ -199,6 +199,14 @@ function createProjectContent(text) {
     return contentElement;
 }
 
+function createCloseButton() {
+    const closeButton = document.createElement('button');
+    closeButton.className = 'close-button';
+    closeButton.textContent = 'x';
+    closeButton.onclick = resetContent;
+    projectView.appendChild(closeButton);
+}
+
 projectNames.forEach((name, index) => {
     const { id } = projectInfos[index];
     name.addEventListener('click', () => {
@@ -208,6 +216,9 @@ projectNames.forEach((name, index) => {
         activeProjectId = id;
 
         updateProjectInfo(id);
+        if (!projectView.querySelector('.close-button')) {
+            createCloseButton();
+        }
     });
 
     name.addEventListener('mouseover', () => {
@@ -217,7 +228,13 @@ projectNames.forEach((name, index) => {
     });
 
     name.addEventListener('mouseout', () => {
-        updateProjectInfo(clickedProjectId);
+        const actives = document.querySelectorAll('.projectName.active').length;
+        if (actives >= 1) {
+            updateProjectInfo(clickedProjectId);
+            if (actives === 1) {
+                createCloseButton();
+            }
+        }
     });
 });
 
@@ -231,4 +248,16 @@ function updateProjectInfo(id) {
             projectView.appendChild(projectContent);
         }
     }
+}
+
+function resetContent() {
+    // Clear the inner HTML of the projectView to remove displayed content
+    projectView.innerHTML = '';
+
+    // Optionally, reset the active project ID
+    activeProjectId = null;
+    clickedProjectId = null;
+
+    // Remove the 'active' class from all project names
+    projectNames.forEach(n => n.classList.remove('active'));
 }
