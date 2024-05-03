@@ -228,12 +228,9 @@ projectNames.forEach((name, index) => {
     });
 
     name.addEventListener('mouseout', () => {
-        const actives = document.querySelectorAll('.projectName.active').length;
-        if (actives >= 1) {
-            updateProjectInfo(clickedProjectId);
-            if (actives === 1) {
-                createCloseButton();
-            }
+        updateProjectInfo(clickedProjectId);
+        if (document.querySelectorAll('.projectName.active').length === 1) {
+            createCloseButton();
         }
     });
 });
