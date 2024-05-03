@@ -318,8 +318,6 @@ h2 span {
 }
 
 .projectList, .projectView {
-   flex-grow: 0;
-   flex-shrink: 0;
    background-color: transparent;
    color: #d1d1d1;
    border-radius: 15px;
@@ -327,6 +325,9 @@ h2 span {
 
 .projectView {
    position: relative;
+   width: 55%;
+   padding: 25px;
+   height: auto;
 }
 
 .close-button {
@@ -348,20 +349,17 @@ h2 span {
    display: flex;
    flex-direction: column;
    align-items: center;
-}
-
-.projectView {
-   width: 55%;
-   padding: 25px;
-   height: auto;
+   overflow: hidden;
 }
 
 .projectName {
    padding: 15px 0;
-   display: inline-flex;
+   display: flex;
    justify-content: center;
    position: relative;
    text-decoration: none;
+   white-space: nowrap;
+   overflow: hidden;
 }
 
 .projectName::before {
@@ -375,7 +373,6 @@ h2 span {
    transform: scaleX(0);
    transition: transform 0.5s ease;
 }
-
 .projectName:hover::before,
 .projectName.active::before {
    transform: scaleX(1);
