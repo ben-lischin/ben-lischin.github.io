@@ -155,7 +155,7 @@ const projectInfos = [
                     <a href="https://github.com/ben-lischin/MazeSolver" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="projectDescription">
-                    <p>The project interface loads with random maze of specified or default dimension. The maze is builds with Kruskal's algorithm, generating a minimum spanning tree of a randomly weighted graph with edges connecting all nodes to their adjacencies.</p>
+                    <p>The project interface loads with random maze of specified or default dimension. The maze builds with Kruskal's algorithm, generating a minimum spanning tree of a randomly weighted graph with edges connecting all nodes to their adjacencies.</p>
                     <p>Users may interact to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may refresh with a new maze.</p>
                 </div>
                 <div class="projectSkills">

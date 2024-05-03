@@ -339,7 +339,7 @@ h2 span {
    border-radius: 6px;
    color: #b4b4b4;
    background: rgb(59,59,59);
-   cursor: pointer
+   cursor: pointer;
 }
 
 .projectList {
@@ -422,6 +422,7 @@ h2 span {
 
    .projectSkills {
       display: flex;
+      flex-wrap: wrap;
 
       .projectSkill {
          margin: 5px;
@@ -430,6 +431,7 @@ h2 span {
          border: 1px solid var(--main-color);
          color: #d1d1d1;
          font-size: 13px;
+         
       }
    
    }
