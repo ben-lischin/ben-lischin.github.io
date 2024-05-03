@@ -155,7 +155,7 @@ const projectInfos = [
                     <a href="https://github.com/ben-lischin/MazeSolver" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="projectDescription">
-                    <p>The project interface loads with random maze of specified or default dimension. This maze is built by applying Kruskal's algorighm to generate a minimum spanning tree of a (seeded) randomly weighted graph of all the cells.</p>
+                    <p>The project interface loads with random maze of specified or default dimension. The maze is built by applying Kruskal's algorighm to generate a minimum spanning tree of a randomly weighted graph with edges connecting all nodes to their adjacencies.</p>
                     <p>Users may interact to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may refresh with a new maze.</p>
                 </div>
                 <div class="projectSkills">
@@ -176,8 +176,8 @@ const projectInfos = [
                 </div>
                 <div class="projectDescription">
                     <p><a href="https://zetasurgical.com/">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
-                    <p>The labeled data is grouped into: intraparenchymal, intraventricular, subarachnoid, subdural, multi-class, and a control group of healthy brains.</p>
-                    <p>After preprocessing, the scans were fed to each of our 5 models for classification: Logistic Regression, Random Forest, Artificial Neural Network, Convolutional Neural Network, LeNet-5 Pretrained Convolutional Neural Network.</p>
+                    <p>After preprocessing, these scans are fed into each of our 5 models for classification: (1) Logistic Regression (2) Random Forest (3) ANN (4) CNN (5) LeNet-5 Pretrained CNN.</p>
+                    <p>In these supervised ML models, the images are fit into collections for the 5 hemmorage types (intraparenchymal, intraventricular, subarachnoid, subdural), a multi-class, and a control group of healthy brains.</p>                    
                 </div>
                 <div class="projectSkills">
                     <div class="projectSkill">Neural Network</div>

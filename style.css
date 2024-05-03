@@ -87,14 +87,16 @@ body {
    background: rgb(59,59,59);
 }
 
+
 #home {
-   height: 100vh;
+   /* height: 100vh; */
    padding-top: 25%;
    margin-bottom: 0;
 }
 
 section {
    padding: 80px 0 50px;
+   min-height: 100vh;
 }
 
 h1 {
@@ -164,9 +166,9 @@ h2 span {
    font-weight: 600;
 }
 
-#experience {
+/* #experience {
    min-height: 100vh;
-}
+} */
 
 .timeline {
    width: 80%;
@@ -300,9 +302,9 @@ h2 span {
    }
 }
 
-#projects {
+/* #projects {
    min-height: 100vh;
-}
+} */
 
 .projects {
    display: flex;
