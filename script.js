@@ -111,8 +111,8 @@ const projectInfos = [
                     <a href="https://github.com/ben-lischin/UltraHealth" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="projectDescription">
-                    <p>This project is a medical web app designed to facilitate seamless interaction and data-transfer between 3 archetypal medical-space users: patients, doctors, pharmacists. A simple front-end was built using Appsmith.</p>
-                    <p>The back-end includes an original normalized relational database containing 9 tables, 75+ attributes, and 500+ rows of sample user data. We also deployed a REST API with a Python Flask container in Docker, granting each user unique role-based CRUD operations.</p>
+                    <p>This project is a medical web app designed to facilitate seamless interaction and data-transfer between 3 archetypal medical-space users: patients, doctors, pharmacists. A simple frontend was built using Appsmith.</p>
+                    <p>The backend includes an original normalized relational database containing 9 tables, 75+ attributes, and 500+ rows of sample user data. We also deployed a REST API with a Python Flask container in Docker, granting each user unique role-based CRUD operations.</p>
                 </div>
                 <div class="projectSkills">
                     <div class="projectSkill">Python</div>
@@ -176,7 +176,7 @@ const projectInfos = [
                 </div>
                 <div class="projectDescription">
                     <p><a href="https://zetasurgical.com/" target="_blank">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
-                    <p>After preprocessing, these scans are fed into each of our 5 models for classification: (1) Logistic Regression (2) Random Forest (3) ANN (4) CNN (5) LeNet-5 Pretrained CNN.</p>
+                    <p>After preprocessing, these scans are fed into each of our 5 models for classification: (1) Logistic Regression (2) Random Forest (3) ANN (4) CNN (5) LeNet-5 pretrained CNN.</p>
                     <p>In these supervised ML models, the images are fit into collections for the 5 hemmorage types (intraparenchymal, intraventricular, subarachnoid, subdural), a multi-class, and a control group of healthy brains.</p>                    
                 </div>
                 <div class="projectSkills">
