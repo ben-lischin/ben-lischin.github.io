@@ -104,10 +104,10 @@ nav a.home.active {
    }
    nav a.home {
       margin-left: 0;
-      font-size: 14px;
+      font-size: 15px;
    }
    nav a.section {
-      font-size: 14px;
+      font-size: 15px;
    }
    nav a::first-child {
       margin-left: 10px;
@@ -490,6 +490,19 @@ p {
       color: var(--main-color);
    }
 }
+
+/* stack projectList and projectView vertically for smaller displays */
+@media (max-width: 420px) {
+   .projects {
+      flex-direction: column;  /* Stacks flex children vertically */
+      gap: 20px;  /* Adjust the gap as needed */
+      align-items: center;
+  }
+
+  .projectList, .projectView {
+      width: 80%;  /* Make each take full width of the container */
+  }
+} 
 
 /* 
 ----------------------
