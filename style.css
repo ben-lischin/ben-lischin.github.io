@@ -494,13 +494,13 @@ p {
 /* stack projectList and projectView vertically for smaller displays */
 @media (max-width: 420px) {
    .projects {
-      flex-direction: column;  /* Stacks flex children vertically */
-      gap: 20px;  /* Adjust the gap as needed */
+      flex-direction: column;
+      gap: 20px;
       align-items: center;
   }
 
   .projectList, .projectView {
-      width: 80%;  /* Make each take full width of the container */
+      width: 80%;
   }
 } 
 
