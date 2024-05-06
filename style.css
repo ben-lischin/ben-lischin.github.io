@@ -35,9 +35,6 @@ header {
    left: 0;
    width: 100%;
    padding: 20px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    z-index: 3;
    background-color: rgba(50,50,50,.8);
    backdrop-filter: blur(5px);
@@ -97,7 +94,38 @@ nav a.home.active {
    border-color: #fff;
    color: #fff;
 }
- 
+
+/* rescaling navbar contents and gaps for smaller displays */
+@media (max-width: 420px) {
+   nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   nav a.home {
+      margin-left: 0;
+      font-size: 14px;
+   }
+   nav a.section {
+      font-size: 14px;
+   }
+   nav a::first-child {
+      margin-left: 10px;
+   }
+   nav a::last-child {
+      margin-right: 10px;
+   }
+   .home h1 {
+      font-size: 85px;
+   }
+   section h2.section {
+      font-size: 50px
+   }
+   
+} 
+
+
+
 /* 
 --------------------
 |       HOME       |
