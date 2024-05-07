@@ -96,7 +96,7 @@ nav a.home.active {
 }
 
 /* rescaling navbar contents and gaps for smaller displays */
-@media (max-width: 750px) {
+@media (max-width: 768px) {
    nav {
       display: flex;
       justify-content: center;
