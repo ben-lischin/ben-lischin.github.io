@@ -96,7 +96,7 @@ nav a.home.active {
 }
 
 /* rescaling navbar contents and gaps for smaller displays */
-@media (max-width: 420px) {
+@media (max-width: 750px) {
    nav {
       display: flex;
       justify-content: center;
@@ -104,6 +104,10 @@ nav a.home.active {
    }
    nav a.home {
       margin-left: 0;
+   }
+} 
+@media (max-width: 420px) {
+   nav a.home {
       font-size: 15px;
    }
    nav a.section {
