@@ -106,12 +106,6 @@ nav a.home.active {
    }
 } 
 @media (max-width: 420px) {
-   nav a.home {
-      font-size: 15px;
-   }
-   nav a.section {
-      font-size: 15px;
-   }
    nav a::first-child {
       margin-left: 10px;
    }
