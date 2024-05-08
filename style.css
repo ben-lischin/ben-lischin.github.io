@@ -9,7 +9,6 @@
     scroll-behavior: smooth;
     cursor: url('/cursor/ow_cursor.cur'), auto;
     --main-color: rgb(107,181,170);
-    /* --main-color: rgb(237,187,54); */
  }
 
 body {
