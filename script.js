@@ -179,9 +179,8 @@ const projectInfos = [
                     <p>In these supervised ML models, the images are fit into collections for the 5 hemmorage types (intraparenchymal, intraventricular, subarachnoid, subdural), a multi-class, and a control group of healthy brains.</p>                    
                 </div>
                 <div class="projectSkills">
-                    <div class="projectSkill">Neural Network</div>
-                    <div class="projectSkill">Random Forest</div>
-                    <div class="projectSkill">Logistic Regression</div>
+                    <div class="projectSkill">Python</div>
+                    <div class="projectSkill">Machine Learning</div>
                 </div>
             </div>
         `
