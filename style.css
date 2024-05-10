@@ -22,6 +22,11 @@ section {
    min-height: 100vh;
 }
 
+::selection {
+   background-color: var(--main-color);
+   color: rgb(59,59,59);
+}
+
  /* 
 ----------------------
 |       NAVBAR       |
