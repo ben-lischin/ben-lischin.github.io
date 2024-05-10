@@ -109,14 +109,8 @@ nav a.home.active {
    nav a.home {
       margin-left: 0;
    }
-} 
-@media (max-width: 420px) {
-   nav a::first-child {
-      margin-left: 10px;
-   }
-   nav a::last-child {
-      margin-right: 10px;
-   }
+}
+@media (max-width: 500px) {
    .home h1 {
       font-size: 85px;
    }
@@ -124,7 +118,7 @@ nav a.home.active {
       font-size: 50px
    }
    
-} 
+}
 
 
 
@@ -510,7 +504,7 @@ p {
 }
 
 /* stack projectList and projectView vertically for smaller displays */
-@media (max-width: 420px) {
+@media (max-width: 500px) {
    .projects {
       flex-direction: column;
       gap: 20px;
@@ -520,7 +514,7 @@ p {
   .projectList, .projectView {
       width: 80%;
   }
-} 
+}
 
 /* 
 ----------------------
