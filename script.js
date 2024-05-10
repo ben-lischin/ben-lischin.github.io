@@ -55,7 +55,7 @@ const projectInfos = [
                 </div>
                 <div class="projectDescription">
                     <p>This extension of the original Covey.Town codebase enables users to play and spectate real-time single or multiplayer games of Shogi. We provide various informational and assistive features to help you figure out the game. When a match starts, each player is given a 10-minute move timer which ticks down during their turn, forfeiting the game at 0. While waiting for another user to join, players have the option to begin a game against our Shogi engine. This engine is implemented using the Negamax algorithm, with adjustable search depth for scalable difficulty settings.</p>
-                    <p>Firebase was integrated to support user authentication and record persistence across sessions, feeding the town leaderboard with all active player stats.</p>
+                    <p>Integrated Firebase to support user authentication and record persistence across sessions, feeding the town leaderboard with all active player stats.</p>
                 </div>
                 <div class="projectSkills">
                     <div class="projectSkill">TypeScript</div>
