@@ -306,6 +306,9 @@ h2 span {
    font-weight: 500;
    color: #d1d1d1;
    cursor: pointer;
+}
+
+.timeline-block-right h3 {
    background: linear-gradient(to right, var(--main-color), var(--main-color) 50%, #d1d1d1 50%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;         
@@ -315,6 +318,18 @@ h2 span {
 
    &:hover {
       background-position: 0 100%;
+   }
+}
+.timeline-block-left h3 {
+   background: linear-gradient(to left, var(--main-color), var(--main-color) 50%, #d1d1d1 50%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;         
+   background-size: 200% 100%;
+   background-position: 0;
+   transition: background-position .3s ease;
+
+   &:hover {
+      background-position: 100%;
    }
 }
 
@@ -365,6 +380,19 @@ h2 span {
       display: inline-block;
       padding: 7px;
       font-size: 14px;
+   }
+
+   .timeline-block-left h3 {
+      background: linear-gradient(to right, var(--main-color), var(--main-color) 50%, #d1d1d1 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;         
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position .3s ease;
+   
+      &:hover {
+         background-position: 0 100%;
+      }
    }
 }
 
