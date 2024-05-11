@@ -285,10 +285,11 @@ h2 span {
    margin-top: 5%;
    z-index: 2;
    cursor: pointer;
+   transition: border-color .3s ease, background .3s ease;
 }
 
 .marker:hover {
-   border: 2px solid #F5F7FA;
+   border-color:#F5F7FA;
    background: var(--main-color);
 }
 
