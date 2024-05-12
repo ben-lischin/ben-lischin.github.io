@@ -583,6 +583,121 @@ p {
 
 /* 
 ----------------------
+|       EDUCATION       |
+----------------------
+ */
+
+ .educationContainer {
+	--iconWidth: max(100px, min(150px, 10vw));
+	--iconWidthMinus: calc(-1 * var(--iconWidth));
+   width: 80%;
+   margin: 50px auto;
+   color: #d1d1d1;
+
+   div.education {
+      margin: 20px 0;
+      display: flex;
+   }
+
+   hr {
+      width: 15%;
+      min-width: 150px;
+      border-color: #d1d1d1;
+   }
+}
+
+.icon {
+	box-shadow: 
+		inset var(--iconWidthMinus) var(--iconWidthMinus) 0 rgb(59,59,59), 
+		inset var(--iconWidth) var(--iconWidthMinus) 0 var(--main-color), 
+		inset var(--iconWidthMinus) var(--iconWidth) 0 var(--main-color), 
+		inset var(--iconWidth) var(--iconWidth) 0 var(--main-color);;
+	transition: box-shadow ease-in-out .6s, color ease-in-out .5s, border-color ease .5s;	
+	width: var(--iconWidth);
+	height: var(--iconWidth);
+	border-radius: 50%;
+	text-align: center;
+	background: center/50%  no-repeat;
+	font-size: calc(var(--iconWidth) / 8);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   word-wrap: break-word;
+   border: 1px solid var(--main-color);
+   aspect-ratio: 1 / 1;
+   cursor: pointer;
+   background-size: 100%;
+
+   span {
+      cursor: pointer;
+   }
+
+   &:hover {
+      box-shadow: 
+         inset 0 0 0 transparent, 
+         inset 0 0 0 transparent, 
+         inset 0 0 0 transparent, 
+         inset 0 0 0 transparent;
+      color: transparent;
+      border-color: transparent;
+   }
+}
+.icon.neu {
+	background-image: url('/res/neu.png');
+}
+.icon.rhs {
+	background-image: url('/res/rhs.png');
+}
+.icon.ssi {
+	background-image: url('/res/ssi.png');
+   cursor: var(--cursor);
+
+   span {
+      cursor: var(--cursor);
+   }
+}
+.icon.ngb {
+	background-image: url('/res/ngb.png');
+}
+
+.education-description {
+   margin-left: 30px;
+   font-size: 13px;
+
+   h4 {
+      font-size: 15px;
+      font-style: italic;
+      margin-top: 5px;
+   }
+
+   .coursework {
+
+      p {
+         margin-bottom: 6px;
+         font-size: 14px;         
+      }
+
+      .courses:first-of-type {
+         margin-bottom: 5px;
+      }
+
+      .course-type {
+         color: rgb(160,160,160);
+         font-weight: bold;
+         margin-right: 5px;
+      }
+   }
+
+   ul {
+      padding-left: 30px;
+   }
+  
+  
+}
+
+/* 
+----------------------
 |       FOOTER       |
 ----------------------
  */
@@ -610,7 +725,7 @@ p {
 
 }
 a.to-top:hover {
-   background-color: rgb(69,69,69);
+   background-color: rgb(59,59,59);
    transform: translateX(-50%) translateY(50%);
    box-shadow: 0 1px 1px #b4b4b4;
 }
