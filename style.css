@@ -117,6 +117,12 @@ nav a.home.active {
    section h2.section {
       font-size: 50px
    }
+   nav a.home {
+      font-size: 13px;
+   }
+   nav a.section {
+      font-size: 13px;
+   }
    
 }
 
@@ -672,14 +678,17 @@ p {
    }
 
    .coursework {
-
       p {
          margin-bottom: 6px;
          font-size: 14px;         
       }
 
-      .courses:first-of-type {
-         margin-bottom: 5px;
+      .courses {
+         font-size: 13px;
+
+         &:first-of-type {
+            margin-bottom: 5px;
+         }
       }
 
       .course-type {
