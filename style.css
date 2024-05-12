@@ -109,6 +109,9 @@ nav a.home.active {
    nav a.home {
       margin-left: 0;
    }
+   nav a.section {
+      margin-left: 25px;
+   }
 }
 @media (max-width: 500px) {
    .home h1 {
@@ -118,10 +121,10 @@ nav a.home.active {
       font-size: 50px
    }
    nav a.home {
-      font-size: 13px;
+      font-size: 14px;
    }
    nav a.section {
-      font-size: 13px;
+      font-size: 14px;
    }
    
 }
