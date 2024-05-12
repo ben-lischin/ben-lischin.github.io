@@ -590,7 +590,7 @@ p {
  a.to-top {
    position: relative;
    left: 50%;
-   transform: translateX(-50%) translateY(50%);
+   transform: translateX(-50%) translateY(75%);
    background-color: rgb(52,52,52);
    color: #b4b4b4;
    border-radius: 50%;
@@ -603,13 +603,16 @@ p {
    justify-content: center;
    font-size: 10px;
    transition: background-color 0.5s ease;
-   box-shadow: 0 1px 1px #b4b4b4;
    z-index: 4;
    margin-top: -15px;
    cursor: pointer;
+   transition: transform 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.53), background-color 0.5s ease, box-shadow 0.5s ease;
+
 }
 a.to-top:hover {
    background-color: rgb(69,69,69);
+   transform: translateX(-50%) translateY(50%);
+   box-shadow: 0 1px 1px #b4b4b4;
 }
 
 footer {
