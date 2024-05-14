@@ -194,6 +194,7 @@ h2 {
 hr {
    width: 35%;
    min-width: 300px;
+   max-width: 500px;
    border-color: var(--main-color);
    margin-top: 0;
    margin-bottom: 0;
