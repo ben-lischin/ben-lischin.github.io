@@ -205,6 +205,8 @@ function createCloseButton() {
     projectView.appendChild(closeButton);
 }
 
+const hoverable = window.matchMedia('(hover: hover)');
+
 projectNames.forEach((name, index) => {
     const { id } = projectInfos[index];
     name.addEventListener('click', () => {
@@ -219,18 +221,20 @@ projectNames.forEach((name, index) => {
         }
     });
 
-    name.addEventListener('mouseover', () => {
-        if (id !== activeProjectId) {
-            updateProjectInfo(id);
-        }
-    });
-
-    name.addEventListener('mouseout', () => {
-        updateProjectInfo(clickedProjectId);
-        if (document.querySelectorAll('.projectName.active').length === 1) {
-            createCloseButton();
-        }
-    });
+    if (hoverable.matches) {
+        name.addEventListener('mouseover', () => {
+            if (id !== activeProjectId) {
+                updateProjectInfo(id);
+            }
+        });
+    
+        name.addEventListener('mouseout', () => {
+            updateProjectInfo(clickedProjectId);
+            if (document.querySelectorAll('.projectName.active').length === 1) {
+                createCloseButton();
+            }
+        });
+    }
 });
 
 function updateProjectInfo(id) {
