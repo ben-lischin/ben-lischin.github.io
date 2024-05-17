@@ -313,7 +313,7 @@ h2 span {
    -webkit-text-fill-color: transparent;         
    background-size: 200% 100%;
    background-position: 100%;
-   transition: background-position 1s ease;
+   transition: background-position .5s ease;
 }
 .timeline-block-left h3 {
    background: linear-gradient(to left, var(--main-color), var(--main-color) 50%, #d1d1d1 50%);
@@ -321,7 +321,7 @@ h2 span {
    -webkit-text-fill-color: transparent;         
    background-size: 200% 100%;
    background-position: 0;
-   transition: background-position 1s ease;
+   transition: background-position .5s ease;
 }
 
 .timeline-content .position {
@@ -379,7 +379,7 @@ h2 span {
       -webkit-text-fill-color: transparent;         
       background-size: 200% 100%;
       background-position: 100%;
-      transition: background-position .3s ease;
+      transition: background-position .5s ease;
    }
 }
 
@@ -774,7 +774,6 @@ footer {
    }
 
 }
-
 @media screen and (max-width: 768px) and (hover: hover) {
    .timeline-block-left h3:hover {
       background-position: 0 100%;
