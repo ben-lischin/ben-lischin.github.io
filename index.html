@@ -54,7 +54,11 @@
                         <h3 onclick="openLink('https://www.klaviyo.com/')">Klaviyo</h3>
                         <span class="inline-date">7/24 - 12/24</span>
                         <div class="position">Software Engineer Co-Op</div>
-                        <p>(incoming)</p>
+                        <p>Member of the Klaviyo Mail Transfer Agent (KMTA) team, Klaviyo's in-house email service provider.</p>
+                        <p>My co-op project was to create a dashboard providing visibility into Klaviyo's email sending metrics – designing a data collection system as well as building a centralized dashboard to present the information.</p>
+                        <p>Implemented an atomic, multithreaded counter with goroutines, able to push data to DynamoDB and flush its memory on interval. This was integrated directly into our events ingest service, handling high-volume production traffic. Automated crons cleaned the data and generated both daily and monthly rollups as historical records.</p>
+                        <p>Developed a REST API with Go and Gin, exposing the database via internal ingress secured to the company VPC as well as specified IP ranges.</p>
+                        <p>Designed a React interface to highlight key metrics, including data visualizations and paginated tables, and support historical data downloads. To align with the latest database updates, the frontend re-fetches data with a hook schedule: on render, then on every even 15-minute interval (*:*/15). The dashboard is regulated by user authentication with role-based access to the particular page.</p>
                      </div>
                   </div>
                   <div class="timeline-date timeline-date-right">Jul - Dec 2024</div>
@@ -121,7 +125,7 @@
                      <div class="coursework">
                         <p>Coursework:</p>
                         <div class="courses">
-                           <span class="course-type">[CS]:</span> Algorithms & Data Structures, Software Engineering, Object-Oriented Design, Databases, iOS Development, Logic & Computation, Theory of Comutation, Discrete Structures, Cybersecurity, Data Science
+                           <span class="course-type">[CS]:</span> Algorithms & Data Structures, Algorithms for Scalable Computing, Software Engineering, Object-Oriented Design, Databases, Computer Systems, Artificial Intelligence, iOS Development, Logic & Computation, Theory of Comutation, Discrete Structures, Cybersecurity, Data Science
                         </div>
                         <div class="courses">
                            <span class="course-type">[Math]:</span> Matrix Methods for Machine Learning, Linear Algebra, Multivariable Calculus, Statistics & Stochastic Processes, Probability & Statistics, Differential Equations, Group Theory, Number Theory, Geometry
@@ -169,7 +173,7 @@
          </section>
          <a href="#home" class="to-top">&#9650;</a>
          <footer>
-            <p>Last updated May 18, 2024</p>
+            <p>Last updated December 8, 2024</p>
          </footer>
 
          <script src="script.js"></script>   
