@@ -48,9 +48,30 @@ const projectInfos = [
         id: 'project1',
         content: `
             <div class="projectContent">
+                <h2>Van Emde Boas Tree</h2>
+                <div class="projectLinks">
+                    <a href="https://github.com/ben-lischin/VanEmdeBoasTree" target="_blank">GitHub</a>
+                    <a href="https://docs.google.com/document/d/1vSFSN-2-h5nnO41R7dqx1Rf1waQMeApxQTPV82dTbNo/edit?usp=sharing" target="_blank">Report</a>
+                </div>
+                <div class="projectDescription">
+                    <p>A Van Emde Boas compact tree supports O(loglogU) operations on integer elements in fixed universe u: insert, delete, query, successor search.</p>
+                    <p>To improve runtime, I introduced a base class utilizing bitset representation for O(1) operations with minimal space, avoiding costly low-level recursion. To achieve optimal amortized runtime for inserts and deletes, min is lazily propagated into recursive levels. Lazy loading was also used to reduce unnecessary memory overhead for allocating empty nested VEB structures, especially for small set representation.</p>
+                    <p>This implementation outperformed the std::set balanced binary search tree, especially with larger set representation. See the report above for a more in-depth performance analysis.</p>
+                </div>
+                <div class="projectSkills">
+                    <div class="projectSkill">C++</div>
+                    <div class="projectSkill">Compact Trees</div>
+                </div>
+            </div>
+        `
+    },
+    { 
+        id: 'project2',
+        content: `
+            <div class="projectContent">
                 <h2>Covey.Town: Shogi</h2>
                 <div class="projectLinks">
-                    <a href="https://github.com/ben-lischin/covey.town-shogi" target="_blank">GitHub Repo</a>
+                    <a href="https://github.com/ben-lischin/covey.town-shogi" target="_blank">GitHub</a>
                     <a href="https://shogi-301.onrender.com/" target="_blank">Live Deployment</a>
                 </div>
                 <div class="projectDescription">
@@ -80,12 +101,12 @@ const projectInfos = [
     //                 <li>On moves that enable a piece to be promoted, you are prompted with a popup to select if you would like to promote the piece</li>    
     //             </ul>
     { 
-        id: 'project2',
+        id: 'project3',
         content: `
             <div class="projectContent">
                 <h2>Vestio</h2>
                 <div class="projectLinks">
-                    <a href="https://github.com/ben-lischin/Vestio" target="_blank">GitHub Repo</a>
+                    <a href="https://github.com/ben-lischin/Vestio" target="_blank">GitHub</a>
                     <a href="https://docs.google.com/presentation/d/1-mSYY5tT8vgVl54vgSB63c7F3QVsmnR19aIyS-rEFJA/edit?usp=sharing" target="_blank">Demo</a>
                 </div>
                 <div class="projectDescription">
@@ -102,16 +123,16 @@ const projectInfos = [
         `
     },
     { 
-        id: 'project3',
+        id: 'project4',
         content: `
             <div class="projectContent">
                 <h2>UltraHealth</h2>
                 <div class="projectLinks">
-                    <a href="https://github.com/ben-lischin/UltraHealth" target="_blank">GitHub Repo</a>
+                    <a href="https://github.com/ben-lischin/UltraHealth" target="_blank">GitHub</a>
                 </div>
                 <div class="projectDescription">
                     <p>This project is a medical web app designed to facilitate seamless interaction and data-transfer between 3 archetypal medical-space users: patients, doctors, pharmacists. A simple frontend was built using Appsmith.</p>
-                    <p>The backend includes an original normalized relational database containing 9 tables, 75+ attributes, and 500+ rows of sample user data. We also deployed a REST API with a Python Flask container in Docker, granting each user unique role-based CRUD operations.</p>
+                    <p>The backend includes an original normalized relational database containing 9 tables and 75+ attributes, filled with sample data. We also built a REST API with Flask, exposing 9 endpoints granting each user unique role-based CRUD operations.</p>
                 </div>
                 <div class="projectSkills">
                     <div class="projectSkill">Python</div>
@@ -124,12 +145,12 @@ const projectInfos = [
         `
     },
     { 
-        id: 'project4',
+        id: 'project5',
         content: `
             <div class="projectContent">
                 <h2>Image Editor</h2>
                 <div class="projectLinks">
-                    <a href="https://github.com/ben-lischin/ImageEditor" target="_blank">GitHub Repo</a>
+                    <a href="https://github.com/ben-lischin/ImageEditor" target="_blank">GitHub</a>
                 </div>
                 <div class="projectDescription">
                     <p>With this processor, users may load, edit, and save images of multiple file types (JPG, JPEG, PNG, PPM, BMP, etc).</p>
@@ -146,12 +167,12 @@ const projectInfos = [
         `
     },
     { 
-        id: 'project5',
+        id: 'project6',
         content: `
             <div class="projectContent">
                 <h2>Maze Solver</h2>
                 <div class="projectLinks">
-                    <a href="https://github.com/ben-lischin/MazeSolver" target="_blank">GitHub Repo</a>
+                    <a href="https://github.com/ben-lischin/MazeSolver" target="_blank">GitHub</a>
                 </div>
                 <div class="projectDescription">
                     <p>The project interface loads with random maze of specified or default dimension. The maze builds with Kruskal's algorithm, generating a minimum spanning tree of a randomly weighted graph with edges connecting all nodes to their adjacencies.</p>
@@ -166,7 +187,7 @@ const projectInfos = [
         `
     },
     { 
-        id: 'project6',
+        id: 'project7',
         content: `
             <div class="projectContent">
                 <h2>Hemorrhage Classification</h2>
