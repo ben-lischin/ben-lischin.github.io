@@ -7,10 +7,10 @@ const Home = () => {
                <p className="description">Software Engineer | Student</p>
                <div className="links">
                   <a href="https://www.linkedin.com/in/ben-lischin/" target="_blank">
-                     <img src="/src/res/linkedin.png" alt="Linkedin" />
+                     <img src="/linkedin.png" alt="Linkedin" />
                    </a>
                    <a href="https://github.com/ben-lischin" target="_blank">
-                     <img src="/src/res/github.png" alt="GitHub" />
+                     <img src="/github.png" alt="GitHub" />
                    </a>
                </div>
             </div>
