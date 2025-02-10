@@ -144,7 +144,7 @@ const Hem = () => {
     );
 }
 
-export const projectContent: { [key: string]: React.ReactNode }= {
+const projectContent: { [key: string]: React.ReactNode }= {
     "Van Emde Boas Tree": <VEB />,
     "Covey.Town: Shogi": <Shogi />,
     "Vestio": <Vestio />,
@@ -153,3 +153,5 @@ export const projectContent: { [key: string]: React.ReactNode }= {
     "Maze Solver": <Maze />,
     "Hemorrhage Classification": <Hem />,
 }
+
+export default projectContent;

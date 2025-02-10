@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projectContent } from "./projectContent";
+import projectContent from "./projectContent";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
