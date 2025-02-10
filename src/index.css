@@ -362,6 +362,24 @@ h2 span {
    margin-bottom: 30px;
 }
 
+.timeline-content .hide, .timeline-content .expand {
+   width: 10px;
+   height: 10px;
+   display: inline-block;
+   background-size: contain;  /* Ensures the image scales to fit within the 14x14 area */
+   background-position: center; /* Centers the image in the span */
+   background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.timeline-block-left .hide {
+   background-image: url('/src/res/left_triangle.png')
+}
+.timeline-block-right .hide {
+   background-image: url('/src/res/right_triangle.png')
+}
+.timeline-content .expand {
+   background-image: url('/src/res/down_triangle.png');
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -407,6 +425,10 @@ h2 span {
       background-size: 200% 100%;
       background-position: 100%;
       transition: background-position .5s ease;
+   }
+
+   .timeline-block-left .hide {
+      background-image: url('/src/res/right_triangle.png')
    }
 }
 
@@ -745,6 +767,12 @@ footer {
    font-size: 10px;
 }
 
+/* 
+----------------------
+|    HOVER EFFECTS    |
+----------------------
+ */
+
 /* hover effects when not touch-screen */
 @media (hover: hover) {
    nav a.section:hover::before {
@@ -771,7 +799,7 @@ footer {
       background-position: 100%;
    }
 
-   .timeline-content .expand:hover {
+   .timeline-content .hide:hover, .timeline-content .expand:hover {
       cursor: pointer;
    }
 
