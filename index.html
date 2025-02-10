@@ -1,187 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Ben Lischin</title>
-      <meta name="author" content="Ben Lischin">
-      <meta name="description" content="Software Engineering portfolio">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./style.css">
-      <link rel="icon" type="image/png" sizes="48x48" href="/res/soccer.png">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ben Lischin</title>
+    <meta name="author" content="Ben Lischin">
+    <meta name="description" content="Software Engineering portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="/src/res/soccer.png">
 
-      <!-- Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZT2XE3V5B"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZT2XE3V5B"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
 
-         gtag('config', 'G-LZT2XE3V5B');
-      </script>
-    </head>
-    <body>
-         <header>
-            <nav>
-               <a href="#home" class="home active">Home</a>
-               <a href="#experience" class="section">Experience</a>
-               <a href="#projects" class="section">Projects</a>
-               <a href="#education" class="section">Education</a>
-            </nav>
-         </header>
-         <section id="home">
-            <div class="home">
-               <h1>Ben Lischin</h1>
-               <hr>
-               <p class="description">Software Engineer | Student</p>
-               <div class="links">
-                  <a href="https://www.linkedin.com/in/ben-lischin/" target="_blank">
-                     <img src="/res/linkedin.png" alt="Linkedin">
-                   </a>
-                   <a href="https://github.com/ben-lischin" target="_blank">
-                     <img src="/res/github.png" alt="GitHub">
-                   </a>
-               </div>
-            </div>
-         </section>
-         <section id="experience">
-            <h2 class="section">Experience</h2>
-            <hr>
-            <div class="timeline">
-               <div>
-                  <div class="timeline-block timeline-block-right">
-                     <div class="marker" onclick="openLink('https://www.klaviyo.com/')"></div>
-                     <div class="timeline-content">
-                        <h3 onclick="openLink('https://www.klaviyo.com/')">Klaviyo</h3>
-                        <span class="inline-date">7/24 - 12/24</span>
-                        <div class="position">Software Engineer Co-Op</div>
-                        <p>Member of the Klaviyo Mail Transfer Agent (KMTA) team, Klaviyo's in-house email service provider.</p>
-                        <p>My co-op project was to create a dashboard providing visibility into Klaviyo's email sending metrics – designing a data collection system as well as building a centralized dashboard to present the information.</p>
-                        <p>Implemented an atomic, multithreaded counter with goroutines, able to push data to DynamoDB and flush its memory on interval. This was integrated directly into our batch event processing service, handling high-volume production traffic. Automated crons cleaned the data and generated both daily and monthly rollups as historical records.</p>
-                        <p>Developed a REST API with Go and Gin, exposing the database via internal ingress secured to the company VPC as well as specified IP ranges.</p>
-                        <p>Designed a React interface to highlight key metrics, including data visualizations and paginated tables, and support historical data downloads. To align with the latest database updates, the frontend re-fetches data with a hook schedule: on render, then on every even 15-minute interval (*:*/15). The dashboard is regulated by user authentication with role-based access to the particular page.</p>
-                     </div>
-                  </div>
-                  <div class="timeline-date timeline-date-right">Jul - Dec 2024</div>
-               </div>
-                
-               <div>
-                  <div class="timeline-block timeline-block-left">
-                     <div class="marker" onclick="openLink('https://www.validity.com/')"></div>
-                     <div class="timeline-content">
-                        <h3 onclick="openLink('https://www.validity.com/')">Validity</h3>
-                        <span class="inline-date">12/23 - 4/24</span>
-                        <div class="position">Software Engineer Intern</div>
-                        <p>After my first Co-Op at Validity, I was given an opportunity to continue my work part-time during the Spring semester.&lrm;</p>
-                        <p>Durng this time, I fleshed out a final SenderScore algorithm to assess the performance of 2M+ IPs in a daily rollup of S3 email data. I implemented optimized clustering, normalization, and similarity computations to ensure any deliverability comparisons affecting sender reputation are only made between senders of relative volume. At the end of the evaluation, senders receive a score gauging their reputation as well as a summary report to inform them on where they may have been penalized.&lrm;</p>
-                        <p>In the remaining time of my internship, I developed an Angular frontend for a new Product Qualified Leads module in our internal software. This included integrating new backend API endpoints to maximize search and filter efficiency for managing new company leads.&lrm;</p>
-                     </div>
-                  </div>
-                  <div class="timeline-date timeline-date-left">Dec 2023 - Apr 2024</div>
-               </div>
-               
-                <div class="timeline-block timeline-block-right">
-                   <div class="marker" onclick="openLink('https://www.validity.com/')"></div>
-                   <div class="timeline-content">
-                      <h3 onclick="openLink('https://www.validity.com/')">Validity</h3>
-                      <span class="inline-date">8/23 - 12/23</span>
-                      <div class="position">Software Engineer Co-Op</div>
-                      <p>Regularly completed spikes and thoroughly researched proof of concept for project planning. For example, I scoped the implementation of a PII−redaction service that would be used to protect sensitive user information in 150M+ emails processed daily.</p>
-                      <p>Identified code issues and inefficiencies, producing solutions in an agile development environment.</p>
-                      <p>Enhanced e2e automation testing efficiency for the DemandTools app by upgrading the Cypress test suite; optimized existing test scripts for improved reliability and maintainability, and added new coverage following TDD.</p>
-                      <p>Queried 300B+ entries of email data across live S3 buckets to identify new leads, driving critical marketing decisions.</p>
-                      <p>Towards the end of my Co-Op, I began working on SenderScore, a project I would continue into my next experience.</p>
-                   </div>
-                </div>
-                <div class="timeline-date timeline-date-right">Aug - Dec 2023</div>
-    
-             </div>
-         </section>
-         <section id="projects">
-            <h2 class="section">Projects</h2>
-            <hr>
-            <div class="projects">
-               <div class="projectList">
-                  <div class="projectName">Van Emde Boas Tree</div>
-                  <div class="projectName">Covey.Town: Shogi</div>
-                  <div class="projectName">Vestio</div>
-                  <div class="projectName">UltraHealth</div>
-                  <div class="projectName">Image Editor</div>
-                  <div class="projectName">Maze Solver</div>
-                  <div class="projectName">Hemorrhage Classification</div>
-              </div>
-               <div class="projectView"></div>
-           </div>
-         </section>
-         <section id="education">
-            <h2 class="section">Education</h2>
-            <hr>
-            <div class="educationContainer">
-               <div class="education">
-                  <div class="icon neu" onclick="openLink('https://www.northeastern.edu/')">
-                     Northeastern University
-                  </div>
-                  <div class="education-description">
-                     <h4>Bachelor of Science in Computer Science and Mathematics</h4>
-                     <p class="date">Sep 2021 - May 2025</p>
-                     <div class="coursework">
-                        <p>Coursework:</p>
-                        <div class="courses">
-                           <span class="course-type">[CS]:</span> Algorithms & Data Structures, Algorithms for Scalable Computing, Software Engineering, Object-Oriented Design, Databases, Computer Systems, Artificial Intelligence, iOS Development, Logic & Computation, Theory of Comutation, Discrete Structures, Cybersecurity, Data Science
-                        </div>
-                        <div class="courses">
-                           <span class="course-type">[Math]:</span> Matrix Methods for Machine Learning, Linear Algebra, Multivariable Calculus, Statistics & Stochastic Processes, Probability & Statistics, Differential Equations, Group Theory, Number Theory, Geometry
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <hr>
-               <div class="education">
-                  <div class="icon rhs" onclick="openLink('https://www.regis.org/')">
-                     <span>Regis High School</span>
-                  </div>
-                  <div class="education-description">
-                     <h4>High School Diploma</h4>
-                     <p class="date">Sep 2017 - Jun 2021</p>
-                  </div>
-               </div>
-               <hr>
-               <div class="education">
-                  <div class="icon ssi">
-                     <span>Summer STEM Institute</span>
-                  </div>
-                  <div class="education-description">
-                     <h4>Certificate: Data Science</h4>
-                     <p class="date">Jun - Aug 2020</p>
-                     <ul>
-                        <li>6-week online interactive masterclass lecture series (30+ hrs/wk) on Python and its applications in data science, including data cleaning, manipulation, and visualization. Introduced modern machine learning models for supervised settings</li>
-                     </ul>
-                  </div>
-               </div>
-               <hr>
-               <div class="education">
-                  <div class="icon ngb" onclick="openLink('https://www.nextgenbootcamp.com/')">
-                     <span>NextGen Bootcamp</span>
-                  </div>
-                  <div class="education-description">
-                     <h4>Certificate: Software Engineering</h4>
-                     <p class="date">Aug 2019</p>
-                     <ul>
-                        <li>4-week university-level summer intensive course (42 hrs/wk) on a NYC campus that trains students for proficiency in both Java and Python</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <a href="#home" class="to-top">&#9650;</a>
-         <footer>
-            <p>Last updated Feb 7, 2025</p>
-         </footer>
-
-         <script src="script.js"></script>   
-         <!-- vanta.js -->
-         <script src="/vantajs/three.r134.min.js"></script>
-         <script src="/vantajs/vanta.net.min.js"></script>
-         <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script> -->
-         <!-- <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script> -->  
-    </body>
+       gtag('config', 'G-LZT2XE3V5B');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
