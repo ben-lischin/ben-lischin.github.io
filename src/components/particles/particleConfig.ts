@@ -49,7 +49,7 @@ const particleConfig: ISourceOptions = {
         default: "out",
       },
       random: true,
-      speed: 1,
+      speed: .75,
       straight: false,
     },
     number: {
