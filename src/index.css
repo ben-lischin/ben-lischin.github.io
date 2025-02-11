@@ -218,7 +218,7 @@ h2 span {
 
 /* 
 ------------------------
-|       PROJECTS       |
+|      Experience      |
 ------------------------
  */
 
@@ -380,7 +380,16 @@ h2 span {
    background-image: url('/src/res/down_triangle.png');
 }
 
+.timeline-content .desc {
+   background-color: rgb(69,69,69, .8);
+   padding: 12px 12px 0 12px;
+   border-radius: 15px;
 
+   p {
+      margin: 0;
+      padding: 0 0 12px 0;
+   }
+}
 
 @media screen and (max-width: 768px) {
    .timeline:before {
@@ -518,7 +527,7 @@ h2 span {
 }
 
 .projectView {
-   background-color: rgb(69,69,69, .9);
+   background-color: rgb(69,69,69, .8);
    min-height: 369px;
 }
 
@@ -572,7 +581,7 @@ h2 span {
          color: #d1d1d1;
          font-size: 13px;
          position: relative;
-         transition: transform 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.53);;
+         transition: transform 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.53);
          transform-origin: center;
       }
    }
@@ -639,7 +648,7 @@ p {
 		inset var(--iconWidthMinus) var(--iconWidthMinus) 0 rgb(59,59,59), 
 		inset var(--iconWidth) var(--iconWidthMinus) 0 var(--main-color), 
 		inset var(--iconWidthMinus) var(--iconWidth) 0 var(--main-color), 
-		inset var(--iconWidth) var(--iconWidth) 0 var(--main-color);;
+		inset var(--iconWidth) var(--iconWidth) 0 var(--main-color);
 	transition: box-shadow ease-in-out .6s, color ease-in-out .5s, border-color ease .5s;	
 	width: var(--iconWidth);
 	height: var(--iconWidth);
@@ -688,8 +697,7 @@ p {
    h4 {
       font-size: 15px;
       font-style: italic;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin: 5px, 0, 5px, 0;
    }
 
    p.date {
