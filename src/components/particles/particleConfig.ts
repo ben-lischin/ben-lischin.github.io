@@ -49,14 +49,14 @@ const particleConfig: ISourceOptions = {
         default: "out",
       },
       random: true,
-      speed: .75,
+      speed: .5,
       straight: false,
     },
     number: {
       density: {
         enable: true,
       },
-      value: 120,
+      value: 100,
     },
     opacity: {
       value: 1.0,
