@@ -830,6 +830,7 @@ footer {
    .close-button:hover {
       background-color: transparent;
       color: #d1d1d1;
+      cursor: pointer;
    }
 
    .icon:hover {
