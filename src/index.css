@@ -693,6 +693,7 @@ p {
    font-size: 13px;
    max-width: 1000px;
    width: 100%;
+   color: #d1d1d1;
 
    h4 {
       font-size: 15px;
@@ -710,11 +711,12 @@ p {
    .coursework {
       p {
          margin-bottom: 6px;
-         font-size: 14px;         
+         font-size: 14px;
       }
 
       .courses {
          font-size: 13px;
+         color: #b4b4b4;
 
          &:first-of-type {
             margin-bottom: 5px;
@@ -722,13 +724,14 @@ p {
       }
 
       .course-type {
-         color: #b4b4b4;
          margin-right: 5px;
+         color: #d1d1d1;
       }
    }
 
    ul {
       padding-left: 30px;
+      color: #b4b4b4;
    }
   
   
