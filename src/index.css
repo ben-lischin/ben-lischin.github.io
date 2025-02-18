@@ -47,7 +47,7 @@ header {
    background-color: rgba(50,50,50,.8);
    backdrop-filter: blur(5px);
    animation: navbar-load .85s ease-in;
-   animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+   animation-timing-function: cubic-bezier(.35, 2, .65, 1);
 }
 @keyframes navbar-load {
    0% { transform: translateY(-100%); }
@@ -204,7 +204,7 @@ hr {
    margin-top: 0;
    margin-bottom: 0;
    animation: hr-load .85s ease;
-   animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+   animation-timing-function: cubic-bezier(.35, 2, .65, 1);
 }
 @keyframes hr-load {
    0% { transform: scale(0); }
@@ -582,7 +582,7 @@ h2 span {
          color: #d1d1d1;
          font-size: 13px;
          position: relative;
-         transition: transform 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+         transition: transform 0.4s cubic-bezier(.35, 2, .65, 1);
          transform-origin: center;
       }
    }
@@ -762,7 +762,7 @@ p {
    transition: background-color 0.5s ease;
    z-index: 4;
    margin-top: -22.5px;
-   transition: transform 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.53), background-color 0.5s ease, box-shadow 0.5s ease;
+   transition: transform 0.3s cubic-bezier(.35, 2, .65, 1), background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 footer {
@@ -825,8 +825,7 @@ footer {
       border-color: transparent;
    }
    .projectContent .projectSkills div.projectSkill:hover {
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-      transform: scale3d(1.1);
+      transform: scale(1.1);
    }
    p a:hover {
       background-position: 0 100%;
