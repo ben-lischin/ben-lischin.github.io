@@ -16,7 +16,7 @@ const Home = () => {
                             'Software Engineer',
                             200,
                             'Software Engineer | Student',
-                            3000,
+                            2500,
                             (el) => {
                                 el?.classList.remove("cursor-animation");
                             }
