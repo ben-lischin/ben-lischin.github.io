@@ -26,7 +26,7 @@ const Shogi = () => {
             <h2>Covey.Town: Shogi</h2>
             <div className="projectLinks">
                 <a href="https://github.com/ben-lischin/covey.town-shogi" target="_blank">GitHub</a>
-                <a href="https://shogi-301.onrender.com/" target="_blank">Live Deployment</a>
+                {/* <a href="https://shogi-301.onrender.com/" target="_blank">Live Deployment</a> */}
             </div>
             <div className="projectDescription">
                 <p>This extension of the original Covey.Town codebase enables users to play and spectate real-time single or multiplayer games of Shogi. We provide various informational and assistive features to help you figure out the game. When a match starts, each player is given a 10-minute move timer which ticks down during their turn, forfeiting the game at 0. While waiting for another user to join, players have the option to begin a game against our Shogi engine. This engine is implemented using the Negamax algorithm, with adjustable search depth for scalable difficulty settings.</p>
