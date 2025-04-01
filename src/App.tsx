@@ -16,7 +16,7 @@ function App() {
       <Education />
       <a href="#home" className="to-top">&#9650;</a>
       <footer>
-        <p>Last updated Feb 10, 2025</p>
+        <p>Last updated March 2025</p>
       </footer>
     </>
   );
