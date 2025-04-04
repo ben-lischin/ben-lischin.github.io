@@ -394,9 +394,11 @@ h2 span {
 }
 
 .timeline-content .desc {
-   background-color: rgb(69,69,69, .8);
+   background-color: rgb(69,69,69, .4);
    padding: 12px 12px 0 12px;
    border-radius: 15px;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+   
 
    p {
       margin: 0;
@@ -542,7 +544,7 @@ h2 span {
 
 .projectView {
    background-color: rgb(69,69,69, .8);
-   min-height: 369px;
+   min-height: 365px;
 }
 
 .projectContent {
