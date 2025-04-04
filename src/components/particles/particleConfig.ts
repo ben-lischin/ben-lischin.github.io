@@ -1,6 +1,9 @@
 import { ISourceOptions } from "@tsparticles/engine";
 
 const particleConfig: ISourceOptions = {
+  fullScreen: {
+    enable: false,
+  },
   background: {
     color: {
       value: "#3b3b3b",
