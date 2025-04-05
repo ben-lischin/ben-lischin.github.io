@@ -473,14 +473,11 @@ h2 span {
    align-items: flex-start;
 }
 
-.projectList {
-  margin-top: 0;
-}
-
 .projectList, .projectView {
    background-color: transparent;
    color: #d1d1d1;
    border-radius: 15px;
+   margin: 0;
 }
 
 .projectView {
@@ -544,7 +541,7 @@ h2 span {
 
 .projectView {
    background-color: rgb(69,69,69, .8);
-   min-height: 365px;
+   min-height: 368.5px;
 }
 
 .projectContent {
