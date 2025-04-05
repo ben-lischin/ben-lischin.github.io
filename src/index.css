@@ -619,6 +619,11 @@ p {
 }
 
 /* stack projectList and projectView vertically for smaller displays */
+@media (max-width: 768px) {
+   .projects {
+      width: 80%;
+  }
+}
 @media (max-width: 500px) {
    .projects {
       flex-direction: column;
@@ -627,7 +632,7 @@ p {
   }
 
   .projectList, .projectView {
-      width: 80%;
+      width: 100%;
   }
 }
 
@@ -750,7 +755,12 @@ p {
       color: #b4b4b4;
    }
   
-  
+}
+
+@media (max-width: 768px) {
+   .educationContainer {
+      width: 80%;
+  }
 }
 
 /* 
