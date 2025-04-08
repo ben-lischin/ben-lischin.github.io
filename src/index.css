@@ -313,7 +313,6 @@ h2 span {
    background: #F5F7FA;
    margin-top: 5%;
    z-index: 2;
-   cursor: pointer;
    transition: border-color .3s ease, background .3s ease;
 }
 

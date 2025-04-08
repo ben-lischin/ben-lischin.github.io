@@ -13,7 +13,7 @@ const Experience = () => {
             <div className="timeline">
                <div>
                   <div className="timeline-block timeline-block-right">
-                        <div className="marker" onClick={() => openLink('https://www.klaviyo.com/')}></div>
+                        <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 onClick={() => openLink('https://www.klaviyo.com/')}>Klaviyo</h3>
                             <span className="inline-date">7/24 - 12/24</span>
@@ -44,7 +44,7 @@ const Experience = () => {
                 
                <div>
                   <div className="timeline-block timeline-block-left">
-                        <div className="marker" onClick={() => openLink('https://www.validity.com/')}></div>
+                        <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 onClick={() => openLink('https://www.validity.com/')}>Validity</h3>
                             <span className="inline-date">12/23 - 4/24</span>
@@ -72,7 +72,7 @@ const Experience = () => {
                </div>
                
                 <div className="timeline-block timeline-block-right">
-                   <div className="marker" onClick={() => openLink('https://www.validity.com/')}></div>
+                   <div className="marker"></div>
                    <div className="timeline-content">
                         <h3 onClick={() => openLink('https://www.validity.com/')}>Validity</h3>
                         <span className="inline-date">8/23 - 12/23</span>
