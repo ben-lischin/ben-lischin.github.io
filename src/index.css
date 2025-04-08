@@ -120,15 +120,17 @@ nav a.home.active {
 }
 
 /* rescaling navbar contents for smaller displays */
+@media screen and (max-width: 768px) {
+   header {
+      margin-top: 2px;
+   }
+}
 @media (max-width: 500px) {
    .home h1 {
       font-size: 85px;
    }
    section h2.section {
       font-size: 50px
-   }
-   header {
-      margin-top: 2px;
    }
    nav a.home {
       font-size: 14px;
