@@ -4,9 +4,18 @@ const Navbar = () => {
     const defaultSection = "home";
     
     const [activeSection, setActiveSection] = useState(defaultSection);
+    const [lock, setLock] = useState(false);
+    const [targetSection, setTargetSection] = useState<string | null>(null);
 
     const handleClick = (section: string) => {
         setActiveSection(section);
+        setLock(true);
+        setTargetSection(section);
+        
+        const targetElement = document.getElementById(section);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     useEffect(() => {
@@ -21,16 +30,23 @@ const Navbar = () => {
                 const id = sec.getAttribute("id");
 
                 if (top >= offset && top < offset + height) {
-                    currentSection = id || "home";
+                    currentSection = id || defaultSection;
+                    
+                    if (lock && targetSection && currentSection === targetSection) {
+                        setLock(false);
+                        setTargetSection(null);
+                    }
                 }
             });
 
-            setActiveSection(currentSection);
+            if (!lock) {
+                setActiveSection(currentSection);
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [lock, targetSection]);
 
     return (
         <header>
@@ -38,34 +54,46 @@ const Navbar = () => {
                 <a 
                     href="#home"  
                     className={`home${activeSection === "home" ? " active" : ""}`} 
-                    onClick={() => handleClick("home")}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        handleClick("home");
+                    }}
                 >
                     Home
                 </a>
                 <a 
                     href="#experience"  
                     className={`section${activeSection === "experience" ? " active" : ""}`} 
-                    onClick={() => handleClick("experience")}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        handleClick("experience");
+                    }}
                 >
                     Experience
                 </a>
                 <a 
                     href="#projects"  
                     className={`section${activeSection === "projects" ? " active" : ""}`} 
-                    onClick={() => handleClick("projects")}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        handleClick("projects");
+                    }}
                 >
                     Projects
                 </a>
                 <a 
                     href="#education"  
                     className={`section${activeSection === "education" ? " active" : ""}`} 
-                    onClick={() => handleClick("education")}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        handleClick("education");
+                    }}
                 >
                     Education
                 </a>
             </nav>
         </header>
     );
-}
+};
 
 export default Navbar;
