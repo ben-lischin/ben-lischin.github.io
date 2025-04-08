@@ -14,7 +14,14 @@ function App() {
       <Experience />
       <Projects />
       <Education />
-      <a href="#home" className="to-top">&#9650;</a>
+      <a href="#home" className="to-top"
+       onClick={(e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+       }}
+      >
+        &#9650;
+      </a>
       <footer>
         <p>Last updated March 2025</p>
       </footer>
