@@ -40,18 +40,29 @@ hr {
 header {
    position: fixed;
    top: 0;
-   left: 0;
-   width: 100%;
-   padding: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: auto;
+   padding: 10px 15px;
+   border-radius: 50px;
+   margin-top: 2px;
    z-index: 3;
    background-color: rgba(50,50,50,.8);
    backdrop-filter: blur(5px);
    animation: navbar-load .85s ease-in;
    animation-timing-function: cubic-bezier(.35, 2, .65, 1);
+   gap: 50px;
 }
 @keyframes navbar-load {
-   0% { transform: translateY(-100%); }
-   100% { transform: translateY(0); }
+   0% { transform: translate(-50%,-100%); }
+   100% { transform: translate(-50%, 0); }
+}
+
+nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
 }
 
 nav a {
@@ -59,8 +70,13 @@ nav a {
    color: #fff;
    text-decoration: none;
    font-weight: 500;
-   margin-left: 35px;
    transition: .3s;
+   nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+}
 }
 
 nav a.section {
@@ -102,20 +118,7 @@ nav a.home.active {
    color: #fff;
 }
 
-/* rescaling navbar contents and gaps for smaller displays */
-@media (max-width: 768px) {
-   nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   nav a.home {
-      margin-left: 0;
-   }
-   nav a.section {
-      margin-left: 25px;
-   }
-}
+/* rescaling navbar contents for smaller displays */
 @media (max-width: 500px) {
    .home h1 {
       font-size: 85px;
