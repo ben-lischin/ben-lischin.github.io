@@ -24,12 +24,12 @@ const Home = () => {
                     />
                 </p>
                 <div className="links">
-                        <a href="https://www.linkedin.com/in/ben-lischin/" target="_blank">
-                            <img src="/res/linkedin.png" alt="Linkedin" />
-                        </a>
-                        <a href="https://github.com/ben-lischin" target="_blank">
-                            <img src="/res/github.png" alt="GitHub" />
-                        </a>
+                    <a href="https://www.linkedin.com/in/ben-lischin/" target="_blank">
+                        <img src="/res/linkedin.png" alt="Linkedin" />
+                    </a>
+                    <a href="https://github.com/ben-lischin" target="_blank">
+                        <img src="/res/github.png" alt="GitHub" />
+                    </a>
                 </div>
             </div>
         </section>
