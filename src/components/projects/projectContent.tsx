@@ -1,5 +1,52 @@
 import React from 'react';
 
+const Splinter = () => {
+    return (
+        <div className="projectContent">
+            <h2>Range Queries in SplinterDB</h2>
+            <div className="projectLinks">
+                <a href="https://github.com/benmash/splinterdb" target="_blank">GitHub</a>
+                <a href="https://docs.google.com/document/d/1xFWvl3AejVlAhovsn5ozmQT9LmScdhqvDo164XTmi38/edit?usp=sharing" target="_blank">Report</a>
+            </div>
+            <div className="projectDescription">
+                <p><a href="https://www.usenix.org/system/files/atc20-conway.pdf" target="_blank">SplinterDB</a> is VMware's production-grade key-value store built on the novel Size-Tiered B<sup>&epsilon;</sup>-Tree indexing structure.</p>
+                <p>This project is an exploration of SplinterDB's internal infrastructure, identifying opportunities to optimize range queries with <a href="https://arxiv.org/pdf/2408.05625" target="_blank">Memento filters</a>. An initial implementation with results and benchmarking was completed for POC. See the report above for a comprehensive analysis.</p>
+            </div>
+            <div className="projectSkills">
+                <div className="projectSkill">C</div>
+                <div className="projectSkill">Databases</div>
+                <div className="projectSkill">Filters</div>
+            </div>
+        </div>
+    );
+}
+const Sketching = () =>{
+    return (
+        <div className="projectContent">
+            <h2>&phi;-Heavy Hitters</h2>
+            <div className="projectLinks">
+                <a href="https://github.com/ben-lischin/heavy_hitters" target="_blank">GitHub</a>
+                {/* <a href="" target="_blank">Report</a> */}
+            </div>
+            <div className="projectDescription">
+                <p><u>def</u>: Given an input stream S of size N, a &phi;-heavy hitter is an item that occurs at least &phi;N times in S</p>
+                <p>Implemented Misra-Gries, Count Sketch, and Count-Min Sketch for solving the &phi;-heavy hitters problem in a single-pass streaming context. These sketching algorithms use probabilistic data structures to approximate the frequency of items in the stream, offering significant memory reduction compared to traditional alternatives.</p>
+                <p>Generated universal, pairwise independent hash families used in the Count and Count-Min Sketches to guarantee bounded error and variance with high probability. Exploited Mersenne prime properties and power-of-two counters to accelerate modular reduction in hashing by &gt;7x.</p>
+                {/* <p>
+                    Universal hash functions from a pairwise independent family: <code>h(x) = ((ax + b) mod p) mod m</code><br />
+                    For a Mersenne prime <code>p = 2<sup>n</sup> − 1</code>, a fast reduction trick is:<br />
+                    <code>x % p = (x &amp; p) + (x &gt;&gt; n)</code>
+                </p> */}
+                <p>Evaluated the precision, recall, update time, and space usage of the sketching algorithms against a ground truth hash table, ingesting a Zipfian disitribution stream to model naturally occurring skewed frequencies.</p>
+            </div>
+            <div className="projectSkills">
+                <div className="projectSkill">C++</div>
+                <div className="projectSkill">Streams</div>
+                <div className="projectSkill">Sketches</div>
+            </div>
+        </div>
+    );
+}
 const VEB = () => {
     return (
         <div className="projectContent">
@@ -20,6 +67,25 @@ const VEB = () => {
         </div>
     );
 }
+const UTTT = () => {
+    return (
+        <div className="projectContent">
+            <h2>Ultimate Tic-Tac-Toe Agentic AI</h2>
+            <div className="projectLinks">
+                <a href="https://github.com/ben-lischin/ultimate_tictactoe" target="_blank">GitHub</a>
+                <a href="https://drive.google.com/file/d/18W7IUlr39F0vKJJ4Cq-WUaHWkKBkCHAi/view?usp=sharing" target="_blank">Report</a>
+            </div>
+            <div className="projectDescription">
+                <p>This project is a comparative analysis of 3 AI Agents in Ultimate Tic-Tac-Toe: Minimax, Monte Carlo Tree Search, Deep Q-Learning.</p>
+                <p>We modeled the game using compact bit representation for subboards, enabling efficient forward-simulation of game states in search-based agents where deepcopy becomes a performance bottleneck. All agents implement a standardized predict(state: UTTT) API, allowing the game engine to simulate matchups between any two strategies. In testing, we also introduce a new random-move agent as a control baseline.</p>
+                <p>Our results highlight the strength of traditional adversarial search with domain-specific heuristics in a deterministic, fully observable environment, while revealing flaws with both stochastic planning and learning-based approaches in this situation.</p>
+            </div>
+            <div className="projectSkills">
+                <div className="projectSkill">Python</div>
+            </div>
+        </div>
+    );
+}
 const Shogi = () => {
     return (
         <div className="projectContent">
@@ -29,7 +95,7 @@ const Shogi = () => {
                 {/* <a href="https://shogi-301.onrender.com/" target="_blank">Live Deployment</a> */}
             </div>
             <div className="projectDescription">
-                <p>This extension of the original Covey.Town codebase enables users to play and spectate real-time single or multiplayer games of Shogi. We provide various informational and assistive features to help you figure out the game. When a match starts, each player is given a 10-minute move timer which ticks down during their turn, forfeiting the game at 0. While waiting for another user to join, players have the option to begin a game against our Shogi engine. This engine is implemented using the Negamax algorithm, with adjustable search depth for scalable difficulty settings.</p>
+                <p>This extension of the original Covey.Town codebase enables users to play and spectate real-time single or multiplayer games of Shogi. We provide various informational and assistive features to help you figure out the game. When a match starts, each player is given a 10-minute move clock, forfeiting the game at 0. While waiting for another user to join, players have the option to begin a game against our Shogi engine. This engine is implemented using the Negamax algorithm, with adjustable search depth for scalable difficulty settings.</p>
                 <p>Integrated Firebase to support user authentication and record persistence across sessions, feeding the town leaderboard with all active player stats.</p>
             </div>
             <div className="projectSkills">
@@ -37,7 +103,7 @@ const Shogi = () => {
                 <div className="projectSkill">React</div>
                 <div className="projectSkill">Firebase</div>
                 <div className="projectSkill">Jest</div>
-                <div className="projectSkill">Socket.io</div>
+                {/* <div className="projectSkill">Socket.io</div> */}
             </div>
         </div>
     );
@@ -48,7 +114,7 @@ const Vestio = () => {
             <h2>Vestio</h2>
             <div className="projectLinks">
                 <a href="https://github.com/ben-lischin/Vestio" target="_blank">GitHub</a>
-                <a href="https://docs.google.com/presentation/d/1-mSYY5tT8vgVl54vgSB63c7F3QVsmnR19aIyS-rEFJA/edit?usp=sharing" target="_blank">Demo</a>
+                {/* <a href="https://docs.google.com/presentation/d/1-mSYY5tT8vgVl54vgSB63c7F3QVsmnR19aIyS-rEFJA/edit?usp=sharing" target="_blank">Demo</a> */}
             </div>
             <div className="projectDescription">
                 <p>Vestio is a live trading app for iOS that allows email-authenticated users to invest fake currency and track their portfolio. Enabling users to practice trading in this no-risk environment, we aim to give users confidence in their investment strategies.</p>
@@ -94,7 +160,7 @@ const Image = () => {
             <div className="projectDescription">
                 <p>With this processor, users may load, edit, and save images of multiple file types (JPG, JPEG, PNG, PPM, BMP, etc).</p>
                 <p>Implemented model-view-controller design pattern to support user interaction through a Swing GUI application. Alternatively, if specified through command-line arguments, the user can either pass in a script of commands or type into the terminal directly to edit an image.</p>
-                <p>Image edits include horizontal/vertical flip, blur/sharpen, brighten/darken, and various grayscale operations. The GUI additionally included a histogram to visualize the red, green, blue, and intensity components of the current version of the (edited) image.</p>
+                {/* <p>Image edits include horizontal/vertical flip, blur/sharpen, brighten/darken, and various grayscale operations. The GUI additionally included a histogram to visualize the red, green, blue, and intensity components of the current version of the (edited) image.</p> */}
             </div>
             <div className="projectSkills">
                 <div className="projectSkill">Java</div>
@@ -144,14 +210,15 @@ const Hem = () => {
     );
 }
 
-const projectContent: { [key: string]: React.ReactNode }= {
-    "Van Emde Boas Tree": <VEB />,
-    "Covey.Town: Shogi": <Shogi />,
-    "Vestio": <Vestio />,
-    "UltraHealth": <UH />,
+export const projectContent: { [key: string]: React.ReactNode }= {
+    "SplinterDB": <Splinter />,
+    "Heavy Hitters": <Sketching />,
+    "VEB Tree": <VEB />,
+    "UTTT": <UTTT />,
+    "Shogi": <Shogi />,
+    // "Vestio": <Vestio />,
+    // "UltraHealth": <UH />,
     "Image Editor": <Image />,
-    "Maze Solver": <Maze />,
-    "Hemorrhage Classification": <Hem />,
+    // "Maze Solver": <Maze />,
+    // "Hemorrhage Classification": <Hem />,
 }
-
-export default projectContent;
