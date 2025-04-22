@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projectContent } from "./projectContent";
+import ProjectContent from "./projectContent";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
@@ -27,7 +27,7 @@ const Projects = () => {
             <hr />
             <div className="projects">
                 <ul className="projectList">
-                    {Object.keys(projectContent).map((projectName) => (
+                    {Object.keys(ProjectContent).map((projectName) => (
                         <li
                             key={projectName}
                             className={`projectName${projectName === selectedProject ? " active" : ""}`} 
@@ -42,7 +42,7 @@ const Projects = () => {
                 </ul>
                 <div className="projectView">
                     <>
-                        {visibleProject && projectContent[visibleProject]}
+                        {visibleProject && ProjectContent[visibleProject]}
                         {(visibleProject && visibleProject === selectedProject) && <button className="close-button" onClick={() => closeProject()}>x</button>}
                     </>
                 </div>

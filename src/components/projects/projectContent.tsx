@@ -210,7 +210,7 @@ const Hem = () => {
     );
 }
 
-export const projectContent: { [key: string]: React.ReactNode }= {
+const ProjectContent: { [key: string]: React.ReactNode } = {
     "SplinterDB": <Splinter />,
     "Heavy Hitters": <Sketching />,
     "VEB Tree": <VEB />,
@@ -222,3 +222,5 @@ export const projectContent: { [key: string]: React.ReactNode }= {
     // "Maze Solver": <Maze />,
     // "Hemorrhage Classification": <Hem />,
 }
+
+export default ProjectContent;
