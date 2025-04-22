@@ -108,48 +108,48 @@ const Shogi = () => {
         </div>
     );
 }
-const Vestio = () => {
-    return (
-        <div className="projectContent">
-            <h2>Vestio</h2>
-            <div className="projectLinks">
-                <a href="https://github.com/ben-lischin/Vestio" target="_blank">GitHub</a>
-                {/* <a href="https://docs.google.com/presentation/d/1-mSYY5tT8vgVl54vgSB63c7F3QVsmnR19aIyS-rEFJA/edit?usp=sharing" target="_blank">Demo</a> */}
-            </div>
-            <div className="projectDescription">
-                <p>Vestio is a live trading app for iOS that allows email-authenticated users to invest fake currency and track their portfolio. Enabling users to practice trading in this no-risk environment, we aim to give users confidence in their investment strategies.</p>
-                <p>Users start with $1,000 to invest - they can search for companies, maintain a watchlist, and buy/sell shares to grow their wealth. At any point, the user can reset their account.</p>
-                <p>Current market data and stock prices are maintained in-app using the Alpha Vantage API.</p>
-            </div>
-            <div className="projectSkills">
-                <div className="projectSkill">Swift</div>
-                <div className="projectSkill">iOS</div>
-                <div className="projectSkill">Firebase</div>
-            </div>
-        </div>
-    );
-}
-const UH = () => {
-    return (
-        <div className="projectContent">
-            <h2>UltraHealth</h2>
-            <div className="projectLinks">
-                <a href="https://github.com/ben-lischin/UltraHealth" target="_blank">GitHub</a>
-            </div>
-            <div className="projectDescription">
-                <p>This project is a medical web app designed to facilitate seamless interaction and data-transfer between 3 archetypal medical-space users: patients, doctors, pharmacists. A simple frontend was built using Appsmith.</p>
-                <p>The backend includes an original normalized relational database containing 9 tables and 75+ attributes, filled with sample data. We also built a REST API with Flask, exposing 9 endpoints granting each user unique role-based CRUD operations.</p>
-            </div>
-            <div className="projectSkills">
-                <div className="projectSkill">Python</div>
-                <div className="projectSkill">MySQL</div>
-                <div className="projectSkill">REST API</div>
-                <div className="projectSkill">Docker</div>
-                <div className="projectSkill">Flask</div>
-            </div>
-        </div>
-    );
-}
+// const Vestio = () => {
+//     return (
+//         <div className="projectContent">
+//             <h2>Vestio</h2>
+//             <div className="projectLinks">
+//                 <a href="https://github.com/ben-lischin/Vestio" target="_blank">GitHub</a>
+//                 {/* <a href="https://docs.google.com/presentation/d/1-mSYY5tT8vgVl54vgSB63c7F3QVsmnR19aIyS-rEFJA/edit?usp=sharing" target="_blank">Demo</a> */}
+//             </div>
+//             <div className="projectDescription">
+//                 <p>Vestio is a live trading app for iOS that allows email-authenticated users to invest fake currency and track their portfolio. Enabling users to practice trading in this no-risk environment, we aim to give users confidence in their investment strategies.</p>
+//                 <p>Users start with $1,000 to invest - they can search for companies, maintain a watchlist, and buy/sell shares to grow their wealth. At any point, the user can reset their account.</p>
+//                 <p>Current market data and stock prices are maintained in-app using the Alpha Vantage API.</p>
+//             </div>
+//             <div className="projectSkills">
+//                 <div className="projectSkill">Swift</div>
+//                 <div className="projectSkill">iOS</div>
+//                 <div className="projectSkill">Firebase</div>
+//             </div>
+//         </div>
+//     );
+// }
+// const UH = () => {
+//     return (
+//         <div className="projectContent">
+//             <h2>UltraHealth</h2>
+//             <div className="projectLinks">
+//                 <a href="https://github.com/ben-lischin/UltraHealth" target="_blank">GitHub</a>
+//             </div>
+//             <div className="projectDescription">
+//                 <p>This project is a medical web app designed to facilitate seamless interaction and data-transfer between 3 archetypal medical-space users: patients, doctors, pharmacists. A simple frontend was built using Appsmith.</p>
+//                 <p>The backend includes an original normalized relational database containing 9 tables and 75+ attributes, filled with sample data. We also built a REST API with Flask, exposing 9 endpoints granting each user unique role-based CRUD operations.</p>
+//             </div>
+//             <div className="projectSkills">
+//                 <div className="projectSkill">Python</div>
+//                 <div className="projectSkill">MySQL</div>
+//                 <div className="projectSkill">REST API</div>
+//                 <div className="projectSkill">Docker</div>
+//                 <div className="projectSkill">Flask</div>
+//             </div>
+//         </div>
+//     );
+// }
 const Image = () => {
     return (
         <div className="projectContent">
@@ -171,44 +171,44 @@ const Image = () => {
         </div>
     );
 }
-const Maze = () => {
-    return (
-        <div className="projectContent">
-            <h2>Maze Solver</h2>
-            <div className="projectLinks">
-                <a href="https://github.com/ben-lischin/MazeSolver" target="_blank">GitHub</a>
-            </div>
-            <div className="projectDescription">
-                <p>The project interface loads with random maze of specified or default dimension. The maze builds with Kruskal's algorithm, generating a minimum spanning tree of a randomly weighted graph with edges connecting all nodes to their adjacencies.</p>
-                <p>Users may interact to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may pause/play the animation or refresh with a new maze.</p>
-            </div>
-            <div className="projectSkills">
-                <div className="projectSkill">Java</div>
-                <div className="projectSkill">Graphs</div>
-                <div className="projectSkill">JUnit</div>
-            </div>
-        </div>
-);
-}
-const Hem = () => {
-    return (
-        <div className="projectContent">
-            <h2>Hemorrhage Classification</h2>
-            <div className="projectLinks">
-                <a href="https://drive.google.com/file/d/1_v3dr_aSB6B6pjKeDZIm0ZEX5avVvLyf/view?usp=sharing" target="_blank">Report</a>
-            </div>
-            <div className="projectDescription">
-                <p><a href="https://zetasurgical.com/" target="_blank">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
-                <p>After preprocessing, these scans are fed into each of our 5 models for classification: (1) Logistic Regression (2) Random Forest (3) ANN (4) CNN (5) LeNet-5 pretrained CNN.</p>
-                <p>In these supervised ML models, the images are fit into collections for the 5 hemmorage types (intraparenchymal, intraventricular, subarachnoid, subdural), a multi-class, and a control group of healthy brains.</p>                    
-            </div>
-            <div className="projectSkills">
-                <div className="projectSkill">Python</div>
-                <div className="projectSkill">Machine Learning</div>
-            </div>
-        </div>
-    );
-}
+// const Maze = () => {
+//     return (
+//         <div className="projectContent">
+//             <h2>Maze Solver</h2>
+//             <div className="projectLinks">
+//                 <a href="https://github.com/ben-lischin/MazeSolver" target="_blank">GitHub</a>
+//             </div>
+//             <div className="projectDescription">
+//                 <p>The project interface loads with random maze of specified or default dimension. The maze builds with Kruskal's algorithm, generating a minimum spanning tree of a randomly weighted graph with edges connecting all nodes to their adjacencies.</p>
+//                 <p>Users may interact to visualize a breadth-first or depth-first search from the start cell to the end cell. The program utilizes a backtracking algorithm that, upon search completion, highlights the most efficient path. At any point, users may pause/play the animation or refresh with a new maze.</p>
+//             </div>
+//             <div className="projectSkills">
+//                 <div className="projectSkill">Java</div>
+//                 <div className="projectSkill">Graphs</div>
+//                 <div className="projectSkill">JUnit</div>
+//             </div>
+//         </div>
+// );
+// }
+// const Hem = () => {
+//     return (
+//         <div className="projectContent">
+//             <h2>Hemorrhage Classification</h2>
+//             <div className="projectLinks">
+//                 <a href="https://drive.google.com/file/d/1_v3dr_aSB6B6pjKeDZIm0ZEX5avVvLyf/view?usp=sharing" target="_blank">Report</a>
+//             </div>
+//             <div className="projectDescription">
+//                 <p><a href="https://zetasurgical.com/" target="_blank">Zeta Surgical</a> partnered with Northeastern University's Experimental Network to host a challenge for the classification and segmentation of hemorhages in CT brain scans. Company data was provided for model training, which will not be shared for privacy regulation. </p>
+//                 <p>After preprocessing, these scans are fed into each of our 5 models for classification: (1) Logistic Regression (2) Random Forest (3) ANN (4) CNN (5) LeNet-5 pretrained CNN.</p>
+//                 <p>In these supervised ML models, the images are fit into collections for the 5 hemmorage types (intraparenchymal, intraventricular, subarachnoid, subdural), a multi-class, and a control group of healthy brains.</p>                    
+//             </div>
+//             <div className="projectSkills">
+//                 <div className="projectSkill">Python</div>
+//                 <div className="projectSkill">Machine Learning</div>
+//             </div>
+//         </div>
+//     );
+// }
 
 const ProjectContent: { [key: string]: React.ReactNode } = {
     "SplinterDB": <Splinter />,
