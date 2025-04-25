@@ -31,6 +31,44 @@ hr {
    border-radius: 10px;
 }
 
+.section-header {
+   text-align: center;
+
+   h2.section {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      font-weight: 100;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      color: transparent;
+      font-size: 65px;
+      -webkit-text-stroke: 1px #fff;
+      font-family: 'Trebuchet MS';
+   }
+   
+   h2.section::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: var(--main-color);
+      border-radius: 10px;
+      width: calc(100% + 40px);
+      transform: translateX(-20px);
+      animation: sec-underline-load .85s ease;
+      animation-timing-function: cubic-bezier(.35, 2, .65, 1);
+   }
+}
+@keyframes sec-underline-load {
+   0% { transform: translateX(-20px) scale(0); }
+   100% { transform: translateX(-20px) scale(1); }
+}
+
+
+
  /* 
 ----------------------
 |       NAVBAR       |
@@ -73,11 +111,11 @@ nav a {
    font-weight: 500;
    transition: .3s;
    nav {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 40px;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+   }
 }
 
 nav a.section {
@@ -170,17 +208,6 @@ h1 {
    font-weight: 1;
 }
 
-h2 {
-   text-align: center;
-   font-weight: 100;
-   margin-bottom: 10px;
-   margin-top: 0px;
-   color: transparent;
-   font-size: 65px;
-   -webkit-text-stroke: 1px #fff;
-   font-family: 'Trebuchet MS';
-}
-
 .description {
    text-align: center;
    color: #fff;
@@ -233,6 +260,28 @@ hr {
 
 h2 span {
    font-weight: 600;
+}
+
+.current {
+   width: 80%;
+   max-width: 600px;
+   padding: 0 30px;
+   margin: 0 auto;
+   font-size: 14px;
+   color: #d1d1d1;
+   border-top: double 2px #d1d1d1;
+   border-bottom: double 2px #d1d1d1;
+   display: flex;
+   gap: 20px;
+
+   .currentText {
+      color: #b4b4b4;
+   }
+
+   .currentDesc {
+      text-align: center;
+   }
+
 }
 
 
@@ -554,13 +603,15 @@ h2 span {
 
 .projectContent {
    color: #b4b4b4;
-   
+
    h2 {
+      text-align: center;
       font-weight: 100;
       -webkit-text-stroke: initial;
       color: #d1d1d1;
       font-family: 'Quicksand';
       font-size: 25px;
+      margin-top: 0px;
       margin-bottom: 5px;
    }
 
@@ -688,7 +739,7 @@ p {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 10px;
+   padding: 11px;
    word-wrap: break-word;
    border: 1px solid var(--main-color);
    aspect-ratio: 1 / 1;

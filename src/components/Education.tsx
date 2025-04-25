@@ -3,8 +3,10 @@ import { openLink } from '../utils';
 const Education = () => {
     return (
         <section id="education">
-            <h2 className="section">Education</h2>
-            <hr />
+            <div className="section-header">
+               <h2 className="section">Education</h2>
+            </div>
+            {/* <hr /> */}
             <div className="educationContainer">
                <div className="education">
                   <div className="icon neu" onClick={() => openLink('https://www.northeastern.edu/')}>

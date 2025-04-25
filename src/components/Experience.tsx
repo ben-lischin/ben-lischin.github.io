@@ -8,8 +8,10 @@ const Experience = () => {
 
     return (
         <section id="experience">
-            <h2 className="section">Experience</h2>
-            <hr />
+            <div className="section-header">
+                <h2 className="section">Experience</h2>
+            </div>
+            {/* <hr /> */}
             <div className="timeline">
                <div>
                   <div className="timeline-block timeline-block-right">

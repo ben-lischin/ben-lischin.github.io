@@ -23,8 +23,10 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            <h2 className="section">Projects</h2>
-            <hr />
+            <div className="section-header">
+                <h2 className="section">Projects</h2>
+            </div>
+            {/* <hr /> */}
             <div className="projects">
                 <ul className="projectList">
                     {Object.keys(ProjectContent).map((projectName) => (
