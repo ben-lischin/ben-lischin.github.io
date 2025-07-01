@@ -29,7 +29,7 @@ const Sketching = () =>{
                 {/* <a href="" target="_blank">Report</a> */}
             </div>
             <div className="projectDescription">
-                <p><u>def</u>: Given an input stream S of size N, a &phi;-heavy hitter is an item that occurs at least &phi;N times in S</p>
+                <p><u>def</u>: Given an input stream S of size N, a &phi;-heavy hitter is an item that occurs at least &phi;N times in S.</p>
                 <p>Implemented Misra-Gries, Count Sketch, and Count-Min Sketch for solving the &phi;-heavy hitters problem in a single-pass streaming context. These sketching algorithms use probabilistic data structures to approximate the frequency of items in the stream, offering significant memory reduction compared to traditional alternatives.</p>
                 <p>Generated universal, pairwise independent hash families used in the Count and Count-Min Sketches to guarantee bounded error and variance with high probability. Exploited Mersenne prime properties and power-of-two counters to accelerate modular reduction in hashing by &gt;7x.</p>
                 {/* <p>
@@ -150,27 +150,27 @@ const Shogi = () => {
 //         </div>
 //     );
 // }
-const Image = () => {
-    return (
-        <div className="projectContent">
-            <h2>Image Editor</h2>
-            <div className="projectLinks">
-                <a href="https://github.com/ben-lischin/ImageEditor" target="_blank">GitHub</a>
-            </div>
-            <div className="projectDescription">
-                <p>With this processor, users may load, edit, and save images of multiple file types (JPG, JPEG, PNG, PPM, BMP, etc).</p>
-                <p>Implemented model-view-controller design pattern to support user interaction through a Swing GUI application. Alternatively, if specified through command-line arguments, the user can either pass in a script of commands or type into the terminal directly to edit an image.</p>
-                {/* <p>Image edits include horizontal/vertical flip, blur/sharpen, brighten/darken, and various grayscale operations. The GUI additionally included a histogram to visualize the red, green, blue, and intensity components of the current version of the (edited) image.</p> */}
-            </div>
-            <div className="projectSkills">
-                <div className="projectSkill">Java</div>
-                <div className="projectSkill">Swing</div>
-                <div className="projectSkill">MVC</div>
-                <div className="projectSkill">JUnit</div>
-            </div>
-        </div>
-    );
-}
+// const Image = () => {
+//     return (
+//         <div className="projectContent">
+//             <h2>Image Editor</h2>
+//             <div className="projectLinks">
+//                 <a href="https://github.com/ben-lischin/ImageEditor" target="_blank">GitHub</a>
+//             </div>
+//             <div className="projectDescription">
+//                 <p>With this processor, users may load, edit, and save images of multiple file types (JPG, JPEG, PNG, PPM, BMP, etc).</p>
+//                 <p>Implemented model-view-controller design pattern to support user interaction through a Swing GUI application. Alternatively, if specified through command-line arguments, the user can either pass in a script of commands or type into the terminal directly to edit an image.</p>
+//                 {/* <p>Image edits include horizontal/vertical flip, blur/sharpen, brighten/darken, and various grayscale operations. The GUI additionally included a histogram to visualize the red, green, blue, and intensity components of the current version of the (edited) image.</p> */}
+//             </div>
+//             <div className="projectSkills">
+//                 <div className="projectSkill">Java</div>
+//                 <div className="projectSkill">Swing</div>
+//                 <div className="projectSkill">MVC</div>
+//                 <div className="projectSkill">JUnit</div>
+//             </div>
+//         </div>
+//     );
+// }
 // const Maze = () => {
 //     return (
 //         <div className="projectContent">
@@ -218,7 +218,7 @@ const ProjectContent: { [key: string]: React.ReactNode } = {
     "Shogi": <Shogi />,
     // "Vestio": <Vestio />,
     // "UltraHealth": <UH />,
-    "Image Editor": <Image />,
+    // "Image Editor": <Image />,
     // "Maze Solver": <Maze />,
     // "Hemorrhage Classification": <Hem />,
 }

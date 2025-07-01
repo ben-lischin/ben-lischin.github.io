@@ -53,7 +53,7 @@ hr {
       bottom: -5px;
       left: 0;
       right: 0;
-      height: 1px;
+      height: 2px;
       background-color: var(--main-color);
       border-radius: 10px;
       width: calc(100% + 40px);
@@ -586,7 +586,8 @@ h2 span {
 
 .projectView {
    background-color: rgb(69,69,69, .8);
-   min-height: 319px;
+   --num-projects: 5;
+   min-height: calc(49.5px * var(--num-projects) + (10px + 1px) * 2);
 }
 
 .close-button {
@@ -749,6 +750,9 @@ p {
    span {
       cursor: pointer;
    }
+}
+.icon.gt {
+	background-image: url('/src/res/gt.png');
 }
 .icon.neu {
 	background-image: url('/src/res/neu.png');
