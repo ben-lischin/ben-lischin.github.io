@@ -9,12 +9,13 @@
     scroll-behavior: smooth;
     cursor: url('./cursor/ow_cursor.cur'), auto;
     --main-color: rgb(107,181,170);
+    --dark-gray: rgb(59,59,59);
  }
 
 body {
    margin: 0;
    font-family: 'Montserrat';
-   background: rgb(59,59,59);
+   background: var(--dark-gray);
 }
 
 section {
@@ -24,7 +25,7 @@ section {
 
 ::selection {
    background-color: var(--main-color);
-   color: rgb(59,59,59);
+   color: var(--dark-gray);
 }
 
 hr {
@@ -149,7 +150,7 @@ nav a.home {
    border: 2px solid transparent;
    background: var(--main-color);
    padding: 5px 10px;
-   color: rgb(59,59,59);
+   color: var(--dark-gray);
    transition: border-color .5s, color .5s;
 }
 nav a.home.active {

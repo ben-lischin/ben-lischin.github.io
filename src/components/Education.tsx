@@ -9,6 +9,16 @@ const Education = () => {
             {/* <hr /> */}
             <div className="educationContainer">
                <div className="education">
+                  <div className="icon gt" onClick={() => openLink('https://www.gatech.edu/')}>
+                     Georgia Institute of Technology
+                  </div>
+                  <div className="education-description">
+                     <h4>Master of Science in Computer Science</h4>
+                     <p className="date">Aug 2025 - Current</p>
+                  </div>
+               </div>
+               <hr />
+               <div className="education">
                   <div className="icon neu" onClick={() => openLink('https://www.northeastern.edu/')}>
                      Northeastern University
                   </div>

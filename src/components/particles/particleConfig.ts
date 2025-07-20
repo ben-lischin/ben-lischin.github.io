@@ -1,5 +1,7 @@
 import { ISourceOptions } from "@tsparticles/engine";
 
+const main_color = "#6bb5aa";
+
 const particleConfig: ISourceOptions = {
   fullScreen: {
     enable: false,
@@ -36,10 +38,10 @@ const particleConfig: ISourceOptions = {
   },
   particles: {
     color: {
-      value: "#6bb5aa",
+      value: main_color,
     },
     links: {
-      color: "#6bb5aa",
+      color: main_color,
       distance: 150,
       enable: true,
       opacity: 0.5,
