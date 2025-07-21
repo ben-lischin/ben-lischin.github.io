@@ -786,11 +786,16 @@ p {
       margin: 23px 0 15px 0;
    }
 
+   .cum {
+      font-size: 14px;
+      margin: -12px 0 10px;
+      font-style: italic;
+   }
+
    p.date {
       margin-top: 0;
       margin-bottom: 20px;
-      font-style: italic;
-      font-size: 14px;
+      font-size: 13px;
    }
 
    .coursework {

@@ -24,6 +24,7 @@ const Education = () => {
                   </div>
                   <div className="education-description">
                      <h4>Bachelor of Science in Computer Science and Mathematics</h4>
+                     <p className="cum">Summa Cum Laude</p>
                      <p className="date">Sep 2021 - May 2025</p>
                      <div className="coursework">
                         <p>Coursework:</p>
@@ -46,7 +47,7 @@ const Education = () => {
                      <p className="date">Sep 2017 - Jun 2021</p>
                   </div>
                </div>
-               <hr />
+               {/* <hr />
                <div className="education">
                   <div className="icon ssi">
                      <span>Summer STEM Institute</span>
@@ -71,7 +72,7 @@ const Education = () => {
                         <li>4-week university-level summer intensive course (42 hrs/wk) on a NYC campus that trains students for proficiency in both Java and Python</li>
                      </ul>
                   </div>
-               </div>
+               </div> */}
             </div>
         </section>
     );
