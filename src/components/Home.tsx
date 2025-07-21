@@ -8,7 +8,7 @@ const Home = () => {
     useEffect(() => {
         if (nameRef.current) {
             const split = new SplitType(nameRef.current, {
-                types: "chars"
+                types: ["words", "chars"]
             });
 
             gsap.from(split.chars, {
