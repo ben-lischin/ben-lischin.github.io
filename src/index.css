@@ -294,6 +294,7 @@ h2 span {
 
 .timeline {
    width: 80%;
+   /* max-width: 1500px; */
    padding: 20px 0;
    margin: 50px auto 50px 0;
    position: relative;
@@ -374,6 +375,7 @@ h2 span {
 .timeline-content {
    width: 95%;
    padding: 0 5px;
+   margin-left: 10px;
 }
 
 .timeline-content h3 {
@@ -394,7 +396,7 @@ h2 span {
    background-size: 200% 100%;
    background-position: 100%;
    transition: background-position .5s ease;
-   margin-left: 15px;
+   margin-left: 5px;
 }
 .timeline-block-left h3 {
    background: linear-gradient(to left, var(--main-color), var(--main-color) 50%, #d1d1d1 50%);
@@ -468,13 +470,15 @@ h2 span {
    .timeline {
       width: calc(100% - 20px);
    }
+
    .timeline:before {
       left: 12.5px;
       width: 2px;
+      margin-left: 10px;
    }
 
    .marker {
-      margin-left: 5px;
+      margin-left: 16px;
    }
 
    .timeline-block {
@@ -492,6 +496,13 @@ h2 span {
    }
    .timeline-date {
       display: none;
+   }
+   .timeline-content {
+      margin-left: 5px;
+
+      h3 {
+         margin-left: 23px;
+      }
    }
    .timeline-block .timeline-content .inline-date {
       width: auto;

@@ -35,7 +35,7 @@ const Experience = () => {
                                 }
                                 {expand4 && 
                                     <div>
-                                        <p>Current Software Engineer on Email Platforms.</p>
+                                        <p>Software Engineer on Email Platforms.</p>
                                     </div>
                                 }
                             </div>
