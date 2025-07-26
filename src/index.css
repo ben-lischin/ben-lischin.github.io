@@ -294,9 +294,9 @@ h2 span {
 
 .timeline {
    width: 80%;
-   /* max-width: 1500px; */
+   max-width: 850px;
    padding: 20px 0;
-   margin: 50px auto 50px 0;
+   margin: 50px auto;
    position: relative;
    overflow: hidden;
 }
@@ -305,18 +305,18 @@ h2 span {
    content: '';
    position: absolute;
    top: 0;
-   left: 50%;
+   left: 30%;
    margin-left: -1px;
    width: 2px;
    height: 100%;
    background: #CCD1D9;
-   z-index: 1
+   z-index: 1;
 }
 
 .timeline-block {
-   width: -webkit-calc(50% + 8px);
-   width: -moz-calc(50% + 8px);
-   width: calc(50% + 8px);
+   width: -webkit-calc(70% + 8px);
+   width: -moz-calc(70% + 8px);
+   width: calc(70% + 8px);
    display: -webkit-box;
    display: -webkit-flex;
    display: -moz-box;
@@ -437,9 +437,9 @@ h2 span {
    width: 10px;
    height: 10px;
    display: inline-block;
-   background-size: contain;  /* Ensures the image scales to fit within the 14x14 area */
-   background-position: center; /* Centers the image in the span */
-   background-repeat: no-repeat; /* Prevents the image from repeating */
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 .timeline-block-left .hide {
    background-image: url('/src/res/left_triangle.png')
@@ -452,13 +452,12 @@ h2 span {
 }
 
 .timeline-content .desc {
-   background-color: rgb(69,69,69, .4);
+   background-color: rgb(69,69,69, .8);
    padding: 6px 12px 6px 12px;
    margin-top: 5px;
    margin-bottom: 10px;
    border-radius: 15px;
    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-   
 
    p {
       margin: 0;

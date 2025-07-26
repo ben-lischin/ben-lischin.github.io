@@ -24,7 +24,7 @@ const Experience = () => {
                         <div className="marker"></div>
                         <div className="timeline-content">
                             <div className="position">Software Engineer I</div>
-                            <span className="inline-date">7/25 - Curr</span>
+                            <span className="inline-date">7/25 - Current</span>
                             <div className="desc">
                                 <span 
                                     className={`${expand4 ? "expand" : "hide"}`}
