@@ -378,6 +378,21 @@ h2 span {
    margin-left: 10px;
 }
 
+.timeline-content ul {
+   list-style-type: "› ";
+   padding-left: 12px;
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #b4b4b4;
+   margin: 0;
+
+   li {
+      margin: 0;
+      padding: 6px 0 6px 0;
+   }
+}
+
 .timeline-content h3 {
    display: inline-block;
    margin-top: 0;
