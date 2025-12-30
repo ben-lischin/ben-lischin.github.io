@@ -15,6 +15,12 @@ const Education = () => {
                   <div className="education-description">
                      <h4>Master of Science in Computer Science</h4>
                      <p className="date">Aug 2025 - Current</p>
+                     <div className="coursework">
+                        <p>Coursework:</p>
+                        <div className="courses">
+                           Computer Networks, Network Science
+                        </div>
+                     </div>
                   </div>
                </div>
                <hr />

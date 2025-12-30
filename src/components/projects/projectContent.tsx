@@ -10,7 +10,7 @@ const Splinter = () => {
             </div>
             <div className="projectDescription">
                 <p><a href="https://www.usenix.org/system/files/atc20-conway.pdf" target="_blank">SplinterDB</a> is VMware's production-grade key-value store built on the novel Size-Tiered B<sup>&epsilon;</sup>-Tree indexing structure.</p>
-                <p>This project is an exploration of SplinterDB's internal infrastructure, identifying opportunities to optimize range queries with <a href="https://arxiv.org/pdf/2408.05625" target="_blank">Memento filters</a>. An initial implementation with results and benchmarking was completed for POC. See the report above for a comprehensive analysis.</p>
+                <p>This project is an exploration of SplinterDB's internal system, identifying opportunities to optimize range queries with <a href="https://arxiv.org/pdf/2408.05625" target="_blank">Memento filters</a>. An initial implementation with results and benchmarking was completed for POC. See the report above for a comprehensive analysis.</p>
             </div>
             <div className="projectSkills">
                 <div className="projectSkill">C</div>
