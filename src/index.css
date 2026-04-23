@@ -484,7 +484,7 @@ h2 span {
 .desc-wrapper {
    display: grid;
    grid-template-rows: 0fr;
-   transition: grid-template-rows 0.4s ease, opacity .4s ease;
+   transition: grid-template-rows .6s ease, opacity .6s ease;
    opacity: 0;
 }
 

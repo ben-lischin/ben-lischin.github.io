@@ -24,7 +24,10 @@ const Experience = () => {
                         <div className="timeline-content">
                             <div className="position">Software Engineer I</div>
                             <span className="inline-date">7/25 - Current</span>
-                            <div className="desc">
+                            <div className="desc"
+                                onMouseEnter={() => setExpand3(true)}
+                                onMouseLeave={() => setExpand3(false)}
+                            >
                                 <span 
                                     className={`${expand3 ? "expand" : "hide"}`}
                                     onClick={() => setExpand3(!expand3)}
@@ -48,7 +51,10 @@ const Experience = () => {
                         <div className="timeline-content">
                             <div className="position">Software Engineer Co-Op</div>
                               <span className="inline-date">7/24 - 12/24</span>
-                              <div className="desc">
+                              <div className="desc"
+                                onMouseEnter={() => setExpand2(true)}
+                                onMouseLeave={() => setExpand2(false)}
+                              >
                                 <span 
                                     className={`${expand2 ? "expand" : "hide"}`}
                                     onClick={() => setExpand2(!expand2)}
@@ -82,7 +88,10 @@ const Experience = () => {
                    <div className="timeline-content">
                         <div className="position">Software Engineer Co-Op</div>
                         <span className="inline-date">8/23 - 4/24</span>
-                        <div className="desc">
+                        <div className="desc"
+                            onMouseEnter={() => setExpand1(true)}
+                            onMouseLeave={() => setExpand1(false)}
+                        >
                             <span 
                                 className={`${expand1 ? "expand" : "hide"}`}
                                 onClick={() => setExpand1(!expand1)}
