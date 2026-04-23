@@ -19,10 +19,7 @@ const ParticlesBackground: React.FC<ParticlesBackgroundProps> = ({ id }) => {
     });
   }, []);
 
-  const options: ISourceOptions = useMemo(
-    () => (particleConfig),
-    []
-  );
+  const options: ISourceOptions = useMemo(() => particleConfig, []);
 
   return <Particles id={id} options={options} />;
 };
