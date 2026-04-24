@@ -20,7 +20,7 @@ const Education = () => {
             <p className="date">Aug 2025 - Current</p>
             <div className="coursework">
               <p>Coursework:</p>
-              <div className="courses">Computer Networks, Network Science</div>
+              <div className="courses">Computer Networks, Network Science, Operating Systems</div>
             </div>
           </div>
         </div>
