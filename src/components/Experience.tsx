@@ -5,6 +5,9 @@ const Experience = () => {
   const [expand1, setExpand1] = useState(false);
   const [expand2, setExpand2] = useState(false);
   const [expand3, setExpand3] = useState(false);
+  const [locked1, setLocked1] = useState(false);
+  const [locked2, setLocked2] = useState(false);
+  const [locked3, setLocked3] = useState(false);
 
   return (
     <section id="experience">
@@ -29,7 +32,15 @@ const Experience = () => {
               <div
                 className="desc"
                 onMouseEnter={() => setExpand3(true)}
-                onMouseLeave={() => setExpand3(false)}
+                onMouseLeave={() => { if (!locked3) setExpand3(false); }}
+                // onClick={() => setLocked3(!locked3)}
+                onClick={(e) => {
+                  var locked = !locked3
+                  if ((e.target as HTMLElement).closest('span.expand')) {
+                    locked =false
+                  }
+                  setLocked3(locked);
+                }}
               >
                 <span
                   className={`${expand3 ? "expand" : "hide"}`}
@@ -57,7 +68,15 @@ const Experience = () => {
               <div
                 className="desc"
                 onMouseEnter={() => setExpand2(true)}
-                onMouseLeave={() => setExpand2(false)}
+                onMouseLeave={() => { if (!locked2) setExpand2(false); }}
+                // onClick={() => setLocked2(!locked2)}
+                onClick={(e) => {
+                  var locked = !locked2
+                  if ((e.target as HTMLElement).closest('span.expand')) {
+                    locked =false
+                  }
+                  setLocked2(locked);
+                }}
               >
                 <span
                   className={`${expand2 ? "expand" : "hide"}`}
@@ -119,7 +138,16 @@ const Experience = () => {
             <div
               className="desc"
               onMouseEnter={() => setExpand1(true)}
-              onMouseLeave={() => setExpand1(false)}
+              onMouseLeave={() => { if (!locked1) setExpand1(false); }}
+              // onClick={() => setLocked1(!locked1)}
+              onClick={(e) => {
+                var locked = !locked1
+                if ((e.target as HTMLElement).closest('span.expand')) {
+                  locked =false
+                }
+                setLocked1(locked);
+              }}
+
             >
               <span
                 className={`${expand1 ? "expand" : "hide"}`}
