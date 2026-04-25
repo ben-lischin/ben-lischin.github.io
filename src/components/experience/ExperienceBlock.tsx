@@ -24,7 +24,7 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
           <div className="position">{title}</div>
           <span className="inline-date">{datesShortened}</span>
           <div
-            className="desc"
+            className={`desc ${locked ? "highlight" : ""}`}
             onMouseEnter={() => setExpand(true)}
             onMouseLeave={() => {
               if (!locked) setExpand(false);
