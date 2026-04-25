@@ -25,7 +25,6 @@ const Projects = () => {
       <div className="section-header">
         <h2 className="section">Projects</h2>
       </div>
-      {/* <hr /> */}
       <div className="projects">
         <ul className="projectList">
           {Object.keys(ProjectContent).map((projectName) => (

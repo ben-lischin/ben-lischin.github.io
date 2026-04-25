@@ -7,7 +7,6 @@ const Experience = () => {
       <div className="section-header">
         <h2 className="section">Experience</h2>
       </div>
-      {/* <hr /> */}
       <div className="timeline">
         <CompanyHeader
           company="Klaviyo"
@@ -58,9 +57,6 @@ const Experience = () => {
             </ul>
           }
         />
-        {/* <div className="timeline-date timeline-date-right">
-          Jul 2024 - Dec 2024
-        </div> */}
         <CompanyHeader
           company="Validity"
           url="https://www.validity.com/"

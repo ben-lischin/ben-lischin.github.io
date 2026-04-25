@@ -6,7 +6,6 @@ const Education = () => {
       <div className="section-header">
         <h2 className="section">Education</h2>
       </div>
-      {/* <hr /> */}
       <div className="educationContainer">
         <div className="education">
           <div
