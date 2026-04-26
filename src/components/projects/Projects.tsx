@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ProjectContent from "./projectContent";
+import { canHover } from "../../utils"
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
@@ -32,8 +33,8 @@ const Projects = () => {
               key={projectName}
               className={`projectName${projectName === selectedProject ? " active" : ""}`}
               onClick={() => clickProject(projectName)}
-              onMouseEnter={() => hoverOn(projectName)}
-              onMouseLeave={() => hoverOff()}
+              onMouseEnter={() => canHover && hoverOn(projectName)}
+              onMouseLeave={() => canHover && hoverOff()}
               style={{ cursor: "pointer" }}
             >
               {projectName}

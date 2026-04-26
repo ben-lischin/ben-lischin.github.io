@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { canHover } from "../../utils";
 
 type ExperienceBlockProps = {
   title: string;
@@ -7,8 +8,6 @@ type ExperienceBlockProps = {
   datesShortened: string;
   description: React.ReactNode;
 };
-
-const noHover = window.matchMedia("(hover: none)").matches;
 
 const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
   title,
@@ -27,12 +26,12 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
           <span className="inline-date">{datesShortened}</span>
           <div
             className={`desc ${locked ? "highlight" : ""}`}
-            onMouseEnter={() => setExpand(true)}
+            onMouseEnter={() => canHover && setExpand(true)}
             onMouseLeave={() => {
-              if (!locked) setExpand(false);
+              if (canHover && !locked) setExpand(false);
             }}
             onClick={(e) => {
-              if (noHover) {
+              if (!canHover) {
                 setExpand(!expand);
                 return;
               }
