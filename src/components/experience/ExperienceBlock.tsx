@@ -8,6 +8,8 @@ type ExperienceBlockProps = {
   description: React.ReactNode;
 };
 
+const noHover = window.matchMedia("(hover: none)").matches;
+
 const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
   title,
   dates,
@@ -30,6 +32,10 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
               if (!locked) setExpand(false);
             }}
             onClick={(e) => {
+              if (noHover) {
+                setExpand(!expand);
+                return;
+              }
               var lock = !locked;
               if ((e.target as HTMLElement).closest("span.expand")) {
                 lock = false;
@@ -39,7 +45,10 @@ const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
           >
             <span
               className={`${expand ? "expand" : "hide"}`}
-              onClick={() => setExpand(!expand)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setExpand(!expand);
+              }}
             />
             {!expand && <span> ...</span>}
             <div className={`desc-wrapper ${expand ? "open" : ""}`}>
