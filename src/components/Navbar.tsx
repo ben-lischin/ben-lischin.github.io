@@ -7,7 +7,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState(defaultSection);
   const [lock, setLock] = useState(false);
   const [targetSection, setTargetSection] = useState<string | null>(null);
-  const [navTop, setNavTop] = useState<number | null>(null);
 
   const updateNavPosition = useCallback(() => {
     const header = headerRef.current;
@@ -20,7 +19,8 @@ const Navbar = () => {
     const endTop = gap;
 
     const newTop = Math.max(endTop, startTop - window.scrollY);
-    setNavTop(newTop);
+
+    header.style.top = `${newTop}px`;
   }, []);
 
   const handleClick = (section: string) => {
@@ -60,27 +60,29 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lock, targetSection]);
 
-  // drives the vertical position
   useLayoutEffect(() => {
     updateNavPosition();
 
     let ticking = false;
+
     const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          updateNavPosition();
-          ticking = false;
-        });
-        ticking = true;
-      }
+      if (ticking) return;
+
+      ticking = true;
+
+      requestAnimationFrame(() => {
+        updateNavPosition();
+        ticking = false;
+      });
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", updateNavPosition);
+
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", updateNavPosition);
@@ -88,10 +90,7 @@ const Navbar = () => {
   }, [updateNavPosition]);
 
   return (
-    <header
-      ref={headerRef}
-      style={navTop !== null ? { top: `${navTop}px` } : undefined}
-    >
+    <header ref={headerRef}>
       <nav>
         <a
           href="#home"
