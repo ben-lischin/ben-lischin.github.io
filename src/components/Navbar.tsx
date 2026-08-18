@@ -1,11 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect, useRef, useCallback } from "react";
 
 const Navbar = () => {
   const defaultSection = "home";
+  const headerRef = useRef<HTMLElement>(null);
 
   const [activeSection, setActiveSection] = useState(defaultSection);
   const [lock, setLock] = useState(false);
   const [targetSection, setTargetSection] = useState<string | null>(null);
+  const [navTop, setNavTop] = useState<number | null>(null);
+
+  const updateNavPosition = useCallback(() => {
+    const header = headerRef.current;
+    if (!header) return;
+
+    const gap = window.innerWidth <= 768 ? 2 : 5;
+
+    const navHeight = header.offsetHeight;
+    const startTop = window.innerHeight - navHeight - gap;
+    const endTop = gap;
+
+    const newTop = Math.max(endTop, startTop - window.scrollY);
+    setNavTop(newTop);
+  }, []);
 
   const handleClick = (section: string) => {
     setActiveSection(section);
@@ -48,8 +64,34 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lock, targetSection]);
 
+  // drives the vertical position
+  useLayoutEffect(() => {
+    updateNavPosition();
+
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateNavPosition();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", updateNavPosition);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", updateNavPosition);
+    };
+  }, [updateNavPosition]);
+
   return (
-    <header>
+    <header
+      ref={headerRef}
+      style={navTop !== null ? { top: `${navTop}px` } : undefined}
+    >
       <nav>
         <a
           href="#home"
