@@ -20,7 +20,7 @@ const Navbar = () => {
 
     const newTop = Math.max(endTop, startTop - window.scrollY);
 
-    header.style.top = `${newTop}px`;
+    header.style.transform = `translateY(${newTop}px)`;
   }, []);
 
   const handleClick = (section: string) => {
