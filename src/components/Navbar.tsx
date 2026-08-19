@@ -12,7 +12,7 @@ const Navbar = () => {
     const header = headerRef.current;
     if (!header) return;
 
-    const gap = window.innerWidth <= 768 ? 2 : 5;
+    const gap = window.innerWidth <= 768 ? 2 : 8;
 
     const navHeight = header.offsetHeight;
     const startTop = window.innerHeight - navHeight - gap;
