@@ -65,6 +65,10 @@ const Navbar = () => {
   }, [lock, targetSection]);
 
   useLayoutEffect(() => {
+    const isTouchDevice =
+      window.matchMedia("(pointer: coarse)").matches;
+    if (isTouchDevice) return;
+
     updateNavPosition();
 
     let ticking = false;
