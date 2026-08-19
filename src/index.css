@@ -80,13 +80,12 @@ hr {
 
 header {
   position: fixed;
-  /* top: 0; */
+  top: 8px;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
   padding: 10px 15px;
   border-radius: 50px;
-  /* margin-top: 5px; */
   z-index: 3;
   background-color: rgba(50, 50, 50, 0.8);
   backdrop-filter: blur(5px);
@@ -167,11 +166,11 @@ nav a.home.active {
 }
 
 /* rescaling navbar contents for smaller displays */
-/* @media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   header {
-    margin-top: 2px;
+    top: 2px;
   }
-} */
+}
 @media (max-width: 500px) {
   .home h1 {
     font-size: 85px;
@@ -520,7 +519,7 @@ h2 span {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .timeline {
     width: calc(100% - 20px);
   }
@@ -1046,7 +1045,7 @@ footer {
     box-shadow: 0 1px 1px #b4b4b4;
   }
 }
-@media screen and (max-width: 768px) and (hover: hover) {
+@media (max-width: 768px) and (hover: hover) {
   .timeline-block-left h3:hover {
     background-position: 0 100%;
   }
