@@ -92,7 +92,33 @@ header {
   animation: navbar-load 0.85s ease-in;
   animation-timing-function: cubic-bezier(0.35, 2, 0.65, 1);
   gap: 50px;
-  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.4);
+  /* box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.4); */
+  /* box-shadow:
+    -2 -2 1px rgba(255, 255, 255, 0.4),
+    inset 2 2 1px rgba(255, 255, 255, 0.4); */
+}
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    175deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0) 55%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 @keyframes navbar-load {
   0% {
