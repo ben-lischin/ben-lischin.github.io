@@ -25,7 +25,7 @@ function App() {
         &#9650;
       </a>
       <footer>
-        <p>Last updated July 2025</p>
+        <p>Last updated August 2026</p>
       </footer>
     </>
   );

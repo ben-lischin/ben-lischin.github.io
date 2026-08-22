@@ -13,12 +13,61 @@ const Experience = () => {
           url="https://www.klaviyo.com/"
         />
         <ExperienceBlock
-          title="Software Engineer I"
-          dates="Jul 2025 - Current"
-          datesShortened="7/25 - Current"
+          title="Software Engineer II"
+          dates="Sep 2026 - Current"
+          datesShortened="9/26 - Current"
           description={
             <ul>
-              <li>Software Engineer on Email Platforms.</li>
+              <li>Email Platforms, Mobile Channels and Messaging Infrastructure</li>
+            </ul>
+          }
+        />
+        <ExperienceBlock
+          title="Software Engineer I"
+          dates="Jul 2025 - Sep 2026"
+          datesShortened="7/25 - 9/26"
+          description={
+            <ul>
+              <li>
+                Reengineered the email channel provider's sync send path
+                with concurrent batch sends, utilizing bulk queries and
+                session caching. Raised peak throughput 66% (15M → 25M
+                transmission/min) in load tests, and achieved 1.7x lower
+                p99 send latency.
+              </li>
+              <li>
+                Converted the account-to-sending-domain relationship from
+                M:1 to M:N, enabling customers to isolate sensitive
+                transactional and service email reputation from their standard
+                marketing volume, and unlocking zero-downtime migration as
+                traffic warms onto a new domain per type.
+              </li>
+              <li>
+                Developed the self-serve KMTA Migration Wizard guiding 50K+
+                companies ($700M+ ARR) off dedicated SendGrid infrastructure
+                (sending domains, IPs, and click-tracking domains); added
+                comprehensive logging and dashboards for rollout observability,
+                and rollback safety preserving vendor records. This consolidates
+                users onto in-house KMTA sending infra, offering significant cost
+                savings, SMTP-level observability, and HIPAA compliance required
+                for EU data residency.
+              </li>
+              <li>
+                Architected an automated cron-based domain warming service, a
+                Redis caching layer over domain lookups to reduce upstream service
+                calls during send-time selection, warming synchronization mechanisms
+                and APIs for domain lifecycle management.
+              </li>
+              <li>
+                Redesigned our static domain DNS pattern to prevent DKIM CNAME record
+                collisions from overwriting each other in the customer's DNS zone and
+                silently breaking email authentication.
+              </li>
+              <li>
+                Built campaign performance tooling and a React interface, providing
+                new e2e send time visibility and identifying pipeline bottlenecks to
+                accelerate the company push for enterprise scalability.
+              </li>
             </ul>
           }
         />
