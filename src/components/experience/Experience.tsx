@@ -44,13 +44,13 @@ const Experience = () => {
               </li>
               <li>
                 Developed the self-serve KMTA Migration Wizard guiding 50K+
-                companies ($700M+ ARR) off dedicated SendGrid infrastructure
-                (sending domains, IPs, and click-tracking domains); added
-                comprehensive logging and dashboards for rollout observability,
-                and rollback safety preserving vendor records. This consolidates
-                users onto in-house KMTA sending infra, offering significant cost
-                savings, SMTP-level observability, and HIPAA compliance required
-                for EU data residency.
+                companies off dedicated SendGrid infrastructure (sending domains,
+                IPs, and click-tracking domains), saving over $9.6M in annual
+                vendor cost; added comprehensive logging and dashboards for
+                rollout monitoring, and rollback safety preserving vendor
+                records. This consolidates users onto in-house Klaviyo MTA sending
+                infra, offering better control, SMTP-level observability,
+                and HIPAA compliance required for EU data residency.
               </li>
               <li>
                 Architected an automated cron-based domain warming service, a
