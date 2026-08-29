@@ -7,7 +7,7 @@
   box-sizing: border-box;
   outline: none;
   scroll-behavior: smooth;
-  cursor: url("./cursor/ow_cursor.cur"), auto;
+  cursor: url("./cursor/ow_cursor_28.cur"), auto;
   --main-color: rgb(107, 181, 170);
   --dark-gray: rgb(59, 59, 59);
 }
