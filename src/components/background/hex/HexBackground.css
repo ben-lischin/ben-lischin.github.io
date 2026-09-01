@@ -1,0 +1,76 @@
+.hexbg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  contain: layout paint;
+
+  will-change: opacity;
+  transform: translateZ(0);
+
+  --hex-line: rgba(255, 255, 255, 0.04);
+  --hex-hover: rgba(107, 181, 170, 0.2);
+  /* --hex-active: rgba(107, 181, 170, 0.5); */
+}
+
+.hexbg__plane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  pointer-events: auto;
+}
+
+.hexbg.is-faded .hexbg__plane {
+  pointer-events: none;
+}
+
+.hexbg__cell {
+  fill: transparent;
+  stroke: var(--hex-line);
+  stroke-width: 1;
+  /* `fill: transparent` is not "painted", so without this the hover target
+     would be the 1px outline only. This makes the whole hex hit-test. */
+  pointer-events: all;
+  /* Instant on, slow fade off. This asymmetry is the whole effect. */
+  transition: fill 500ms ease;
+}
+
+.hexbg__cell:hover {
+  fill: var(--hex-hover);
+  transition-duration: 0ms;
+}
+
+/* .hexbg__cell:active {
+  fill: var(--hex-active);
+} */
+
+.hexbg__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* background: linear-gradient(to bottom, transparent, var(--dark-gray)); */
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 59, 59, 0) 45%,
+    rgb(59, 59, 59) 100%
+  );
+}
+
+.hexbg.is-faded {
+  content-visibility: hidden;
+}
+
+@media (hover: none) {
+  .hexbg {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hexbg__cell {
+    transition-duration: 0ms;
+  }
+}

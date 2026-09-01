@@ -1,0 +1,69 @@
+.lattice {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  transform: scale(1.1);
+  will-change: opacity, transform;
+
+  --lattice-line: rgba(255, 255, 255, 0.07);
+  --lattice-hover: rgba(107, 181, 170, 0.28);
+  --lattice-active: rgba(107, 181, 170, 0.5);
+}
+
+.lattice__plane {
+   --lattice-cell: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--lattice-cols) * var(--lattice-cell));
+  height: calc(var(--lattice-rows) * var(--lattice-cell));
+  display: grid;
+  grid-template-columns: repeat(var(--lattice-cols), var(--lattice-cell));
+  grid-template-rows: repeat(var(--lattice-rows), var(--lattice-cell));
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%) scale(1.5) rotateX(45deg) rotateZ(45deg);
+  pointer-events: auto;
+}
+
+.lattice.is-faded .lattice__plane {
+  pointer-events: none;
+}
+
+.lattice__cell {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--lattice-line);
+  background-color: transparent;
+  /* Instant on, slow fade off — this is what makes it read as a trail. */
+  transition: background-color 500ms ease;
+}
+
+.lattice__cell:hover {
+  background-color: var(--lattice-hover);
+  transition-duration: 0ms;
+}
+
+.lattice__cell:active {
+  background-color: var(--lattice-active);
+}
+
+.lattice__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--dark-gray));
+}
+
+/* The isometric plane is far too dense to be legible on a phone. */
+@media (hover: none) {
+  .lattice {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lattice__cell {
+    transition-duration: 0ms;
+  }
+}
