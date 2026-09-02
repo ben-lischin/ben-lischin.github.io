@@ -53,15 +53,17 @@
   pointer-events: none;
   /* background: linear-gradient(to bottom, transparent, var(--dark-gray)); */
   background:
-    linear-gradient(
+    /* linear-gradient(
       to bottom,
       rgb(from var(--dark-gray) r g b / 0) 45%,
       rgb(from var(--dark-gray) r g b / 0.5) 100%
-    ),
+    ), */
     radial-gradient(
-      ellipse 50% 40% at 50% 50%,
-      rgb(from var(--dark-gray) r g b / 0) 45%,
-      rgb(from var(--dark-gray) r g b / 0.6) 100%
+      ellipse 50% 40% at 50% 45%,
+      rgb(from var(--dark-gray) r g b / 0) 50%,
+      /* rgb(from var(--dark-gray) r g b / 0.2) 90%, */
+      rgb(from var(--dark-gray) r g b / 0.5) 90%,
+      rgb(from var(--dark-gray) r g b / 0.9) 100%
       /* var(--dark-gray) 100% */
     );
 }
